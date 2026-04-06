@@ -61,6 +61,7 @@ Energía_{DC\_equiv} = \frac{Energía_{AC}}{0.9}
 $$
     
 * **Etapa 3: Energía Total Diaria** 
+
 Para concluir la primera fase, la etapa tres unifica todos los requerimientos energéticos calculados. Se consolida la demanda sumando las cargas nativas en DC y las cargas equivalentes convertidas de AC, obteniendo así el requerimiento energético total diario de la instalación.
 
 $$
@@ -68,6 +69,7 @@ Energía_{Total} = Energía_{DC} + Energía_{DC\_equiv}
 $$
 
 * **Etapa 4: Requerimiento en Amperios-hora (Ah)** 
+
 Se traduce la energía total (Wh) a capacidad de corriente en el tiempo (Ah), la cual es la unidad estándar comercial para el dimensionamiento de baterías. Para ello, el diseñador debe establecer la tensión nominal de operación del sistema, seleccionando típicamente entre 12 V, 24 V o 48 V. Operar a mayor voltaje permite reducir la corriente transitada, minimizando así las caídas de tensión y el calibre del cableado requerido
     
 $$
@@ -75,6 +77,7 @@ Requerimiento_{diario} (Ah/dia) = \frac{Energía_{Total} (Wh/dia)}{Tensión_{nom
 $$
 
 * **Etapa 5: Demanda Final con Pérdidas del Sistema**
+
 Luego, se introduce un margen de seguridad esencial para compensar las ineficiencias físicas del sistema. Los conductores eléctricos presentan resistencia, las conexiones disipan calor y los reguladores de carga consumen energía en su operación. Para garantizar que la demanda final sea satisfecha plenamente, se asume una eficiencia general del sistema del 90%, lo que obliga a sobredimensionar el requerimiento diario calculado previamente
     
 $$
@@ -82,6 +85,7 @@ Demanda_{final} (Ah/dia) = \frac{Requerimiento_{diario}}{0.9}
 $$
 
 * **Etapa 6: Corriente Total Requerida** 
+
 Se determina la inyección de corriente necesaria por parte del arreglo de paneles. Debido a que la radiación solar fluctúa a lo largo del día, se utiliza el parámetro de Horas de Sol Equivalente (ESH), el cual estandariza la radiación disponible asumiendo un rendimiento pleno.
     
 $$
@@ -89,6 +93,7 @@ Corriente_{requerida} (A) = \frac{Demanda_{final} (Ah/dia)}{ESH (h/dia)}
 $$
 
 * **Etapa 7: Dimensionamiento del Arreglo Fotovoltaico (Módulos)** 
+
 La arquitectura física del generador solar basándose en la ficha técnica del módulo seleccionado, específicamente en su tensión de máxima potencia ($V_{mp}$) y su corriente de máxima potencia ($I_{mp}$). Para satisfacer la demanda de corriente calculada, los paneles se agrupan en paralelo. Simultáneamente, para alcanzar la tensión nominal del sistema, se conectan en serie. El tamaño final del arreglo es el producto de ambas configuraciones.
 
 * **Módulos en paralelo ($N_p$):** 
