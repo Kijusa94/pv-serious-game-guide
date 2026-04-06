@@ -50,5 +50,6 @@ number-sections: true
 
 {{< include sections/_1_introduction.qmd >}}
 {{< include sections/_2_objectives.qmd >}}
-{{< include sections/_3_results.qmd >}}
-{{< include sections/_4_conclusions.qmd >}}
+{{< include sections/_3_theorical_framework.qmd >}}
+{{< include sections/_4_methodology.qmd >}}
+{{< include sections/_5_questions.qmd >}}

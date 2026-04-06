@@ -1,0 +1,119 @@
+"SECCIÓN 4
+CONTENIDO Esta sección se diligencia los contenidos orientados.
+Por favor no eliminar filas ni casillas ";;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+CONTENIDO;;;;;;;;;;
+Nombre del Tema 1:;;"objetivo especifico por 
+Unidad 1";dia ;mes;año ;"Estrategía Pedagógica (Presencial)
+Revisar las del punto 3";"Estrategía Pedagógica (Independiente)
+Revisar las del punto 3";Hr trabajo Presencial;Hr Trabajo Independiente;
+Historia corta del control e instrumentación industrial;Historia corta del control e instrumentación industrial;Identificar  los elementos de automatización e instrumentación involucrados en los procesos de producción.;;;;1.1;1.3;3;6;
+Conceptos básicos;Conceptos básicos;;;;;;;;;
+Características de los sistemas de control de lazo abierto y cerrado;Características de los sistemas de control de lazo abierto y cerrado;;;;;;;;;
+Esquemas de control;Esquemas de control;;;;;;;;;
+Sistema de lazo cerrado generalizado;Sistema de lazo cerrado generalizado;;;;;;;;;
+Instrumentos típicos en un lazo de control ;Instrumentos típicos en un lazo de control ;;;;;;;;;
+Definiciones básicas en instrumentación y control;Definiciones básicas en instrumentación y control;;;;;;;;;
+Sistemas de transmisión de señal;Sistemas de transmisión de señal;;;;;;;;;5,2
+Transmisores de señal;Transmisores de señal;;;;;;;;;
+Redes de comunicación industrial;Redes de comunicación industrial;;;;;;;;;
+Controladores lógicos programables y sistemas de control distribuidos;Controladores lógicos programables y sistemas de control distribuidos;;;;;;;;;
+Descripción conceptual en el diseño de automatización de un proceso industrial;Descripción conceptual en el diseño de automatización de un proceso industrial;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+Nombre del Tema 2:;;"objetivo especifico por 
+Unidad 2";dia ;mes;año ;"Estrategía Pedagógica (Presencial)
+Revisar las del punto 3";"Estrategía Pedagógica (Independiente)
+Revisar las del punto 3";Hr trabajo Presencial;Hr Trabajo Independiente;
+Campos electricos;;Comprender los fenomenos fisicos electromagneticos relacionados con los instrumentos de medición, control y actuación de procesos productivos;;;;1.1 - 1.2 - 3.1 - 5.4;1.2 - 3.1 - 5.4;3;6;
+Potencial electrico;;;;;;;;;;
+Corriente y Resistencia;;;;;;;;;;
+Circucitos de corriente continua;;;;;;1.1 - 1.2 - 3.1 - 5.4;1.2 - 3.1 - 5.4;3;6;
+Campos magneticos;;;;;;1.1 - 1.2 - 3.1 - 5.4;1.2 - 3.1 - 5.4;3;6;
+Ley de Faraday;;;;;;;;;;
+Circuitos de corriente alterna;;;;;;1.1 - 1.2 - 3.1 - 5.4;1.2 - 3.1 - 5.4;3;6;
+Parcial I;;;;;;1.1 - 1.2 - 3.1 - 5.4;1.2 - 3.1 - 5.4;3;6;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+Nombre del Tema 3:;;"objetivo especifico por 
+Unidad 3";dia ;mes;año ;"Estrategía Pedagógica (Presencial)
+Revisar las del punto 3";"Estrategía Pedagógica (Independiente)
+Revisar las del punto 3";Hr trabajo Presencial;Hr Trabajo Independiente;
+Diagrama PFD;Diagrama PFD;Aplicar normas o estandares para la descripción grafica de los componentes industriales que intervienen en los procesos de transformación.;;;;1.1 - 1.2 - 3.1 - 5.4;1.2 - 3.1 - 5.4;3;6;
+Diagrama P&ID;Diagrama P&ID;;;;;;;;;
+Diagrama de lazo de instrumentos;Diagrama de lazo de instrumentos;;;;;;;;;
+Diagramas de mando, potencia y escalera;Diagramas de mando, potencia y escalera;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+Nombre del Tema 4:;;"objetivo especifico por 
+Unidad 4";dia ;mes;año ;"Estrategís Pedagógica (Presencial)
+Revisar las del punto 4";"Estrategís Pedagógica (Independiente)
+Revisar las del punto 4";Hr trabajo Presencial;Hr Trabajo Independiente;
+Introducción;Introducción;Comprender el funcionamiento de los dispositivos de medición relacionados en un lazo de instrumentos industriales;;;;1.1 - 3.5;1.1 - 1.2;3;6;
+Propiedades de los instrumentos de medición.;Propiedades de los instrumentos de medición.;;;;;;;;;
+Medición de temperatura;Medición de temperatura;;;;;1.1 - 3.5;1.1 - 1.2;3;6;
+Medición de presión;Medición de presión;;;;;;;;;
+Medición de caudal;Medición de caudal;;;;;;;;;
+Medición de nivel;Medición de nivel;;;;;1.1 - 3.5;1.1 - 1.2;3;6;
+Medición de otras variables ;Medición de otras variables ;;;;;;;;;
+Transmisión de señales eléctricas;Transmisión de señales eléctricas;;;;;;;;;
+Parcial II;;;;;;1.1 - 3.5;1.1 - 1.2;3;6;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+Nombre del Tema 5:;;"objetivo especifico por 
+Unidad 5";dia ;mes;año ;Estrategís Pedagógica (Presencial);Estrategís Pedagógica (Independiente);Hr trabajo Presencial;Hr Trabajo Independiente;
+Introducción;Introducción;Comprender el funcionamiento de los actuadores relacionados en un lazo de instrumentos industriales;;;;4.1 - 5.1;1.2 - 1.3 - 2.1;3;6;
+Válvulas de control;Válvulas de control;;;;;;;;;
+Convertidor I/P;Convertidor I/P;;;;;;;;;
+Accesorios de las válvulas de control;Accesorios de las válvulas de control;;;;;4.1 - 5.1;1.2 - 1.3 - 2.1;3;6;
+Motor eléctrico;Motor eléctrico;;;;;;;;;
+Relés y contactores;Relés y contactores;;;;;;;;;
+Accesorios de los motores eléctricos;Accesorios de los motores eléctricos;;;;;4.1 - 5.1;1.2 - 1.3 - 2.1;3;6;
+Cilindros neumáticos e hidráulicos;Cilindros neumáticos e hidráulicos;;;;;;;;;
+Otros tipos de actuadores;Otros tipos de actuadores;;;;;4.1 - 5.1;1.2 - 1.3 - 2.1;3;6;
+Parcial III;;;;;;4.1 - 5.1;1.2 - 1.3 - 2.1;3;6;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+Nombre del Tema 6:;;"objetivo especifico por 
+Unidad 6";dia ;mes;año ;Estrategís Pedagógica (Presencial);Estrategís Pedagógica (Independiente);Hr trabajo Presencial;Hr Trabajo Independiente;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;
+;;;;;;;;;;

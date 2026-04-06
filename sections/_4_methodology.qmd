@@ -1,0 +1,34 @@
+## Procedimiento {#sec-procedimiento}
+
+El desarrollo de esta práctica se rige bajo una metodología de aprendizaje experiencial e híbrido. Para garantizar la asimilación técnica y minimizar la fatiga visual propia de los entornos inmersivos, la sesión alterna entre la interacción en Realidad Virtual (RV) y el cálculo analítico en estación de trabajo. 
+
+El tiempo estimado para la ejecución total del laboratorio es de 45 a 50 minutos. Se requiere el uso de calculadora, libreta de apuntes y seguir estrictamente las siguientes fases:
+
+**Fase Pre-Laboratorio: Diagnóstico Inicial**
+1. Antes de iniciar la interacción con los equipos, el estudiante deberá diligenciar la encuesta diagnóstica inicial provista por el docente.
+2. Este instrumento tiene como objetivo establecer la línea base de sus conocimientos teóricos en energía solar, circuitos eléctricos y su nivel de experiencia previa con tecnologías de Realidad Virtual.
+
+**Fase 1: Auditoría Energética Inmersiva (Tiempo estimado: 10 min)**
+1. Colóquese el visor de RV (Meta Quest) y acceda a la simulación inicial correspondiente al escenario residencial.
+2. Recorra el entorno virtual con el propósito de identificar las cargas eléctricas disponibles (electrodomésticos y equipos electrónicos).
+3. Seleccione los objetos que requerirán suministro eléctrico en la locación remota y deposítelos en el vehículo de carga dispuesto en la simulación.
+4. Al interactuar con cada equipo, la interfaz de usuario desplegará sus especificaciones técnicas. Registre cuidadosamente en su libreta de apuntes la **potencia nominal (W)** y el **tiempo de operación diario estimado (h)** de cada carga. Esta recolección de datos es el insumo fundamental para su diseño.
+
+**Fase 2: Dimensionamiento Analítico (Tiempo estimado: 20 min)**
+1. Retírese el visor de RV para realizar el trabajo de escritorio.
+2. Utilizando los datos recolectados en la Fase 1, aplique el algoritmo matemático de 8 etapas detallado en la **Sección 3.3** de esta guía.
+3. Deberá calcular y registrar de manera estructurada:
+   * El consumo energético de cada equipo y su conversión equivalente a corriente continua (DC).
+   * La demanda total diaria consolidada y ajustada con el factor de pérdidas del sistema (eficiencia del 0.9).
+   * La configuración del arreglo fotovoltaico (cantidad de módulos conectados en serie y en paralelo).
+   * La configuración del banco de baterías, garantizando los días de autonomía definidos por el docente y respetando el límite de profundidad de descarga (DoD).
+
+**Fase 3: Validación Técnica en el Entorno Virtual (Tiempo estimado: 10 min)**
+1. Vuelva a colocarse el visor de RV e ingrese a la segunda etapa del *serious game*: la interfaz del "Centro de Cálculos" o panel de diseño del sistema.
+2. Introduzca las configuraciones paramétricas (número de paneles, arreglo serie/paralelo, capacidad de baterías) que obtuvo en su análisis manual.
+3. Ejecute la validación dentro del simulador. El sistema evaluará el balance energético de su propuesta; si los cálculos garantizan la estabilidad y autonomía del sistema para las cargas seleccionadas, la instalación será aprobada. Si el sistema arroja fallos por subdimensionamiento o sobrecarga, deberá revisar sus cálculos matemáticos e iterar su diseño.
+
+**Fase Post-Laboratorio: Evaluación y Cierre**
+1. Tras finalizar la simulación y retirarse los equipos, el estudiante deberá completar la encuesta de salida.
+2. Esta evaluación medirá tanto la comprensión técnica adquirida (conceptos de cálculo de energía diaria, relación de tensión/corriente y dimensionamiento), como la percepción ergonómica de la herramienta virtual (facilidad de uso, nivel de inmersión y presencia de fatiga visual o mareo).
+3. Finalmente, entregue al evaluador su hoja de cálculos analíticos (Fase 2) como soporte del trabajo de ingeniería realizado.
