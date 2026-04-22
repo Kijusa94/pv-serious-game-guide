@@ -1,49 +1,66 @@
 ---
-title: Plantilla informe
-
+title: Guía de Laboratorio
 author:
-  - name: Primer Autor Estudiante
+  - name: Luis Alejandro Martinez
     orcid: 0000-0000-0000-0000
     corresponding: true
-    email: student-email@estudiante.fup.edu.co
+    email: alejohur25@gmail.com
     roles:
       - Estudiante
     affiliations:
       - Fundación Universitaria de Popayán
 
-  - name: Segundo Autor Estudiante
+  - name: Juan José Piamba
     orcid: 0000-0000-0000-0000
     corresponding: true
-    email: student-email@estudiante.fup.edu.co
+    email: juan.josep@docente.fup.edu.co
     roles:
-      - Estudiante
+      - Docente
+    affiliations:
+      - Fundación Universitaria de Popayán
+
+  - name: Diego Enrique Guzman
+    orcid: 0000-0000-0000-0000
+    corresponding: true
+    email: diego.guzman@unad.edu.co
+    roles:
+      - Docente
+    affiliations:
+      - Universidad Nacional Abierta y a Distancia
+
+  - name: Juan David Guzman
+    orcid: 0000-0000-0000-0000
+    corresponding: true
+    email: david.guzman@docente.fup.edu.co
+    roles:
+      - Docente
     affiliations:
       - Fundación Universitaria de Popayán
 
 keywords:
-  - Palabra clave 1
-  - Palabra clave 2
-  - Palabra clave 3
-  - Palabra clave 4
-  - Palabra clave 5
+  - Energía Solar
+  - Simulación
+  - Realidad Virtual
+  - Educación
+  - Formación Profesional
 
 abstract: |
-  Este es un marcador de posición simple para el resumen del manuscrito. Debe ser un único párrafo de 150-250 palabras que resuma los principales hallazgos y la importancia de la investigación.
+  La transición energética hacia fuentes renovables es un imperativo global para mitigar el cambio climático, pero presenta desafíos formativos significativos en el sector técnico y profesional. Este proyecto aborda la necesidad de metodologías de aprendizaje innovadoras para la capacitación en sistemas fotovoltaicos (FV), superando las limitaciones de los enfoques tradicionales mediante el uso de tecnologías inmersivas. Se presenta el diseño y desarrollo de un entorno de simulación virtual (serious game) que permite a los estudiantes realizar prácticas de montaje, dimensionamiento y mantenimiento de sistemas FV en un contexto seguro y controlable. Se implementó un primer prototipo centrado en la auditoría energética de un sistema fotovoltaico doméstico, integrando componentes virtuales realistas con una interfaz de usuario intuitiva y mecanismos de retroalimentación. La metodología seguida combinó el diseño instruccional, el desarrollo de software ágil y la validación por parte de expertos en energías renovables. Los resultados preliminares sugieren que el entorno virtual mejora la motivación, el compromiso y la comprensión de los conceptos técnicos por parte de los estudiantes.
 
 plain-language-summary: |
-  Este es un marcador de posición simple para el resumen en lenguaje sencillo del manuscrito. Debe ser un único párrafo que explique los hallazgos de la investigación de manera clara y accesible para una audiencia general.
+  Este proyecto desarrolló un simulador en realidad virtual para capacitar estudiantes en sistemas de energía solar. El objetivo fue crear una herramienta que permita practicar la auditoria de cargas y los cálculos de dimensionamiento de sistemas fotovoltaicos de forma segura y controlada. Se diseñó un entorno virtual donde los estudiantes pueden realizar auditorías energéticas de sistemas domésticos, recolectar datos de consumo, calcular la configuración del sistema y validarla dentro de la simulación.
 
 key-points:
-  - Principales hallazgos o conclusiones de la investigación/reporte.
-  - Implicaciones o aplicaciones de los hallazgos.
-  - Cualquier recomendación para futuras investigaciones o acciones basadas en los hallazgos.
+  - El simulador permite a los estudiantes realizar auditorías energéticas de sistemas fotovoltaicos de forma segura y controlada.
+  - El simulador permite a los estudiantes calcular la configuración del sistema y validar el diseño dentro de la simulación.
+  - El simulador permite a los estudiantes aprender sobre sistemas fotovoltaicos de forma divertida y motivadora.
 
 date: last-modified
 
 bibliography: references.bib
 
 citation:
-  container-title: Plantilla de informe
+  container-title: Guía de Laboratorio
 
 number-sections: true
 ---
