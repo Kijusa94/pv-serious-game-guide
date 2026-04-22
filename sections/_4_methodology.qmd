@@ -6,7 +6,7 @@ El tiempo estimado para la ejecución total del laboratorio es de 30 minutos. Se
 
 
 
-**Fase Pre-Laboratorio: Diagnóstico Inicial**
+### Fase Pre-Laboratorio: Diagnóstico Inicial
 
 1. Antes de iniciar la interacción con los equipos, el estudiante deberá diligenciar la encuesta diagnóstica inicial provista por el docente.
 
@@ -14,7 +14,7 @@ El tiempo estimado para la ejecución total del laboratorio es de 30 minutos. Se
 
 
 
-**Fase Inicial: Tutorial**
+### Fase Inicial: Tutorial
 
 1. Colóquese el visor de RV (Meta Quest) y acceda a la aplicación.
 
@@ -60,7 +60,7 @@ Etapas del tutorial.
 
 
 
-**Fase 1: Auditoría Energética Inmersiva**
+### Fase 1: Auditoría Energética Inmersiva
 
 1. Acceda a la opción 'Start Game' del menú principal de la aplicación para iniciar la práctica.
 
@@ -87,7 +87,7 @@ Contará con un tiempo límite de 2min para completar esta fase
 ![Tabla resumen de los dispositivos seleccionados](/figures/pv_design/figure_1_determine_system_power.png){#fig-summary-table width="100%"}
 
 
-**Fase 2: Dimensionamiento Analítico**
+### Fase 2: Dimensionamiento Analítico
 
 1. Retírese el visor de RV para realizar el trabajo de escritorio.
 
@@ -102,7 +102,7 @@ Contará con un tiempo límite de 2min para completar esta fase
 
    * La configuración del banco de baterías, garantizando los días de autonomía definidos por el docente y respetando el límite de profundidad de descarga (DoD).
 
-**Fase 3: Validación Técnica en el Entorno Virtual**
+### Fase 3: Validación Técnica en el Entorno Virtual
 
 1. Introduzca los cálculos realizados en las interfaces de dimensionamiento propuestas en el entorno virtual.
 
@@ -129,7 +129,7 @@ Contará con un tiempo límite de 2min para completar esta fase
 
 ![Panel de Resultados](figures/pv_design/figure_8_feedback_panel.png){#fig-feedback-panel width="100%"}
 
-**Fase Post-Laboratorio: Evaluación y Cierre**
+### Fase Post-Laboratorio: Evaluación y Cierre
 
 1. Tras finalizar la simulación y retirarse los equipos, el estudiante deberá completar la encuesta de salida.
 
