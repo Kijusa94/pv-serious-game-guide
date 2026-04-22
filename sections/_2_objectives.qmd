@@ -3,14 +3,14 @@
 
 ### Objetivo General
 
-- Dimensionar integralmente un sistema fotovoltaico autónomo (off-grid) utilizando un entorno de simulación en Realidad Virtual (RV) y herramientas de cálculo tradicional, aplicando la relación matemática entre potencia nominal y tiempo de operación.
+- Dimensionar un sistema fotovoltaico autónomo (off-grid) utilizando un entorno de simulación en Realidad Virtual (RV) y herramientas de cálculo tradicional.
 
 ### Objetivos Específicos
 
-- Reconocer las cargas eléctricas disponibles en el entorno inmersivo e interpretar su consumo energético diario
+- Identificar las cargas eléctricas disponibles en el entorno inmersivo e interpretar su consumo energético diario
 
 - Comprender el impacto de las pérdidas del sistema  y realizar la conversión matemática de las cargas de corriente alterna (AC) a su equivalente en corriente continua (DC)
 
 - Dimensionar un arreglo fotovoltaico funcional, determinando la cantidad de módulos solares requeridos y su configuración de conexión (en serie o paralelo) para satisfacer las exigencias de tensión y corriente del diseño.
 
-- Dimensionar correctamente el banco de baterías  para garantizar los días de reserva (autonomía) del sistema, aplicando factores de corrección técnicos y parámetros seguros de descarga.
+- Dimensionar un banco de baterías  para garantizar los días de reserva (autonomía) del sistema, aplicando factores de corrección técnicos y parámetros seguros de descarga.

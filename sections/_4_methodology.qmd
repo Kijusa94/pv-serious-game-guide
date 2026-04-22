@@ -2,33 +2,137 @@
 
 El desarrollo de esta práctica se rige bajo una metodología de aprendizaje experiencial e híbrido. Para garantizar la asimilación técnica y minimizar la fatiga visual propia de los entornos inmersivos, la sesión alterna entre la interacción en Realidad Virtual (RV) y el cálculo analítico en estación de trabajo. 
 
-El tiempo estimado para la ejecución total del laboratorio es de 45 a 50 minutos. Se requiere el uso de calculadora, libreta de apuntes y seguir estrictamente las siguientes fases:
+El tiempo estimado para la ejecución total del laboratorio es de 30 minutos. Se requiere el uso de calculadora, libreta de apuntes y seguir estrictamente las siguientes fases:
+
+
 
 **Fase Pre-Laboratorio: Diagnóstico Inicial**
+
 1. Antes de iniciar la interacción con los equipos, el estudiante deberá diligenciar la encuesta diagnóstica inicial provista por el docente.
+
 2. Este instrumento tiene como objetivo establecer la línea base de sus conocimientos teóricos en energía solar, circuitos eléctricos y su nivel de experiencia previa con tecnologías de Realidad Virtual.
 
-**Fase 1: Auditoría Energética Inmersiva (Tiempo estimado: 10 min)**
-1. Colóquese el visor de RV (Meta Quest) y acceda a la simulación inicial correspondiente al escenario residencial.
-2. Recorra el entorno virtual con el propósito de identificar las cargas eléctricas disponibles (electrodomésticos y equipos electrónicos).
-3. Seleccione los objetos que requerirán suministro eléctrico en la locación remota y deposítelos en el vehículo de carga dispuesto en la simulación.
-4. Al interactuar con cada equipo, la interfaz de usuario desplegará sus especificaciones técnicas. Registre cuidadosamente en su libreta de apuntes la **potencia nominal (W)** y el **tiempo de operación diario estimado (h)** de cada carga. Esta recolección de datos es el insumo fundamental para su diseño.
 
-**Fase 2: Dimensionamiento Analítico (Tiempo estimado: 20 min)**
+
+**Fase Inicial: Tutorial**
+
+1. Colóquese el visor de RV (Meta Quest) y acceda a la aplicación.
+
+2. Se desplegará el menú de la @fig-menu-login. En este menú, cree un usuario con su nombre y una contraseña. Este usuario será utilizado para identificar sus datos.  
+
+> La contraseña debe contener al menos 8 caracteres, incluyendo mayúsculas, minúsculas, números y simbolos.
+
+![Menu de Login](/figures/menu/figura_1_login_menu.png){#fig-menu-login width="100%"}
+
+3. Al iniciar, se desplegará el menú principal de la aplicación en la @fig-menu-main. En este menú, seleccione la opción "Tutorial" para iniciar.
+
+![Menu Principal](/figures/menu/figure_2_main_menu.png){#fig-menu-main width="100%"}
+
+4. Una vez seleccionado el tutorial, se desplegará el menú de la @fig-tutorial-welcome, dónde se dará bienvenida al usuario y se le indicará que debe seguir los pasos del tutorial para aprender a utilizar la aplicación.
+
+![Menu de Tutorial - Welcome](/figures/tutorial/figure_1_tutorial_welcome.png){#fig-tutorial-welcome width="100%"}
+
+5. Ejecute los pasos del tutorial, como se indican en la @fig-tutorial-guides.
+
+::: {#fig-tutorial-guides layout-ncol=3}
+
+![Menu de Tutorial - Movimiento](/figures/tutorial/figure_2_tutorial_movement.png){#fig-tutorial-movement width="100%"}
+
+![Menu de Tutorial - Interacción](/figures/tutorial/figure_3_tutorial_interaction.png){#fig-tutorial-interaction-1 width="100%"}
+
+![Menu de Tutorial - Simulación](/figures/tutorial/figure_4_tutorial_simulation.png){#fig-tutorial-simulation-1 width="100%"}
+
+![Menu de Tutorial - Simulación](/figures/tutorial/figure_5_tutorial_simulation.png){#fig-tutorial-simulation-2 width="100%"}
+
+![Menu de Tutorial - Interacción](/figures/tutorial/figure_6_tutorial_interaction.png){#fig-tutorial-interaction-2 width="100%"}
+
+![Menu de Tutorial - Instrucciones](/figures/tutorial/figure_7_tutorial_instructions.png){#fig-tutorial-instructions width="100%"}
+
+Etapas del tutorial.
+:::
+
+6. Al finalizar el tutorial, se mostrará el menú principal de la aplicación.
+
+> El resumen de controles se puede encontrar en la @fig-controllers.
+
+![Controles de la aplicación](/figures/scenary/figure_1_controllers.png){#fig-controllers width="100%"}
+
+
+
+
+**Fase 1: Auditoría Energética Inmersiva**
+
+1. Acceda a la opción 'Start Game' del menú principal de la aplicación para iniciar la práctica.
+
+2. Seleccione los objetos que requerirán suministro eléctrico en la locación remota y deposítelos en el vehículo de carga dispuesto en la simulación.
+
+:::{.callout-important}
+Contará con un tiempo límite de 2min para completar esta fase
+:::
+
+> Al interactuar con cada equipo, la interfaz de usuario desplegará sus especificaciones técnicas (@fig-dc-devices-info).
+
+![Información de las cargas disponibles](/figures/scenary/figure_2_dc_device.png){#fig-dc-devices-info width="100%"}
+
+> Deberá depositar los equipos en el vehículo de carga dispuesto en la simulación (@fig-deposit-dc-device).
+
+![Llenado del vehículo de carga](/figures/scenary/figure_3_deposit_dc_device.png){#fig-deposit-dc-device width="100%"}
+
+> Para alcanzar el segundo piso, usted podrá utilizar el marcador dispuesto en las escaleras. Presione hacia adelante con el stick derecho apuntando hacia el marcador para moverse al segundo piso (@fig-teleport-second-floor).
+
+![Teleport al segundo piso](/figures/scenary/figure_4_teleport.png){#fig-teleport-second-floor width="100%"}
+
+3. Una vez haya finalizado el tiempo, podrá observar una tabla resumen de los dispositivos seleccionados y sus especificaciones para los cálculos posteriores, así como lo indica la @fig-summary-table.
+
+![Tabla resumen de los dispositivos seleccionados](/figures/pv_design/figure_1_determine_system_power.png){#fig-summary-table width="100%"}
+
+
+**Fase 2: Dimensionamiento Analítico**
+
 1. Retírese el visor de RV para realizar el trabajo de escritorio.
-2. Utilizando los datos recolectados en la Fase 1, aplique el algoritmo matemático de 8 etapas detallado en la **Sección 3.3** de esta guía.
+
+2. Utilizando los datos recolectados en la Fase 1, aplique el algoritmo matemático de 8 etapas detallado en la **@sec-procedure-math-design-and-sizing**.
+
 3. Deberá calcular y registrar de manera estructurada:
    * El consumo energético de cada equipo y su conversión equivalente a corriente continua (DC).
+
    * La demanda total diaria consolidada y ajustada con el factor de pérdidas del sistema (eficiencia del 0.9).
+
    * La configuración del arreglo fotovoltaico (cantidad de módulos conectados en serie y en paralelo).
+
    * La configuración del banco de baterías, garantizando los días de autonomía definidos por el docente y respetando el límite de profundidad de descarga (DoD).
 
-**Fase 3: Validación Técnica en el Entorno Virtual (Tiempo estimado: 10 min)**
-1. Vuelva a colocarse el visor de RV e ingrese a la segunda etapa del *serious game*: la interfaz del "Centro de Cálculos" o panel de diseño del sistema.
-2. Introduzca las configuraciones paramétricas (número de paneles, arreglo serie/paralelo, capacidad de baterías) que obtuvo en su análisis manual.
-3. Ejecute la validación dentro del simulador. El sistema evaluará el balance energético de su propuesta; si los cálculos garantizan la estabilidad y autonomía del sistema para las cargas seleccionadas, la instalación será aprobada. Si el sistema arroja fallos por subdimensionamiento o sobrecarga, deberá revisar sus cálculos matemáticos e iterar su diseño.
+**Fase 3: Validación Técnica en el Entorno Virtual**
+
+1. Introduzca los cálculos realizados en las interfaces de dimensionamiento propuestas en el entorno virtual.
+
+::: {#fig-tutorial-guides layout-ncol=3}
+
+![Panel de auditoría de cargas](figures/pv_design/figure_2_battery_and_system_losses.png){#fig-design-panel-1 width="100%"}
+
+![Panel de selección de baterías](figures/pv_design/figure_3_list_esh.png){#fig-design-panel-2 width="100%"}
+
+![Panel de selección de ubicación](figures/pv_design/figure_4_esh.png){#fig-design-panel-3 width="100%"}
+
+![Panel de corriente total necesaria](figures/pv_design/figure_5_determine_total_current_required.png){#fig-design-panel-4 width="100%"}
+
+![Panel de especificaciones del panel fotovoltaico](figures/pv_design/figure_6_determine_the_number_of_photovoltaic_modules.png){#fig-design-panel-5 width="100%"}
+
+![Panel de especificaciones del banco de baterías](figures/pv_design/figure_7_determine_the_total_battery_capacity.png){#fig-design-panel-6 width="100%"}
+
+:::
+
+
+2. Ejecute la validación dentro del simulador. El sistema evaluará el balance energético de su propuesta; si los cálculos garantizan la estabilidad y autonomía del sistema para las cargas seleccionadas, la instalación será aprobada.
+
+> Al finalizar la validación observará su puntaje final, los cálculos realizados y los valores óptimos sugeridos por el simulador (retroalimentación - @fig-feedback-panel).
+
+![Panel de Resultados](figures/pv_design/figure_8_feedback_panel.png){#fig-feedback-panel width="100%"}
 
 **Fase Post-Laboratorio: Evaluación y Cierre**
+
 1. Tras finalizar la simulación y retirarse los equipos, el estudiante deberá completar la encuesta de salida.
+
 2. Esta evaluación medirá tanto la comprensión técnica adquirida (conceptos de cálculo de energía diaria, relación de tensión/corriente y dimensionamiento), como la percepción ergonómica de la herramienta virtual (facilidad de uso, nivel de inmersión y presencia de fatiga visual o mareo).
+
 3. Finalmente, entregue al evaluador su hoja de cálculos analíticos (Fase 2) como soporte del trabajo de ingeniería realizado.

@@ -9,7 +9,7 @@ Antes de diseñar el sistema, repasaremos los conceptos fundamentales abordados 
 
 * **Potencia Eléctrica (W):** Es la cantidad de energía consumida o generada por un elemento en un instante de tiempo. Se mide en Vatios (Watts). Matemáticamente, es el producto del voltaje y la corriente 
 $$
-P = V \times I
+P = V \cdot I
 $$
 
 * **Energía Eléctrica (Wh):** Representa el consumo o generación de potencia a lo largo del tiempo. Es el factor principal para nuestra auditoría energética. Su ecuación básica es:
@@ -36,11 +36,13 @@ Los sistemas autónomos se utilizan en áreas sin acceso a la red eléctrica (co
 * **Banco de Baterías:** Almacena la energía en DC para garantizar la autonomía del sistema durante la noche o días nublados.
 * **Inversor (DC/AC):** Transforma la energía de las baterías (DC) a corriente alterna (AC) para el consumo final. Este proceso tiene pérdidas térmicas, por lo que su eficiencia suele rondar el 90%.
 
-![Diagrama de un sistema fotovoltaico autónomo](https://placehold.co/600x400){#fig-diagrama-sistema-fotovoltaico-autonomo}
+La @fig-off-grid-diagram muestra un diagrama de un sistema fotovoltaico autónomo.
+
+![Diagrama de un sistema fotovoltaico autónomo](/figures/theory/off_grid_diagram.png){#fig-off-grid-diagram}
 
 
 
-### Procedimiento Matemático de Diseño y Dimensionamiento
+### Procedimiento Matemático de Diseño y Dimensionamiento {#sec-procedure-math-design-and-sizing}
 
 El dimensionamiento de un sistema fotovoltaico autónomo no es una colección de fórmulas aisladas, sino un proceso secuencial. Como en cualquier diseño industrial, partimos de conocer la necesidad final (la demanda del usuario), calculamos las ineficiencias del proceso de transporte y transformación, y con ese total determinamos cuánta materia prima (energía solar y baterías) necesitamos instalar.
 
