@@ -1,0 +1,160 @@
+## Procedimiento {#sec-procedimiento}
+
+El desarrollo de esta práctica se rige bajo una metodología de aprendizaje experiencial utilizando planos de las instalaciones y la tabla de componentes. Para garantizar la asimilación técnica, la sesión se divide en dos partes: una fase de auditoría energética y una fase de dimensionamiento del sistema fotovoltaico.
+
+El tiempo estimado para la ejecución total del laboratorio es de 30 minutos. Se requiere el uso de calculadora, libreta de apuntes y seguir estrictamente las siguientes fases:
+
+:::{.callout-warning}
+LEA TODAs LAS INSTRUCCIONES ANTES DE INICIAR LA PRÁCTICA. EL INCUMPLIMIENTO DE LOS PASOS INDICADOS PUEDE RESULTAR EN LA INVALIDACIÓN DEL TRABAJO.
+:::
+
+
+
+### Fase Pre-Laboratorio: Diagnóstico Inicial
+
+1. Antes de iniciar el procedimiento, el estudiante deberá diligenciar la encuesta diagnóstica inicial provista por el docente.
+
+2. Este instrumento tiene como objetivo establecer la línea base de sus conocimientos teóricos en energía solar, circuitos eléctricos y su nivel de experiencia previa con tecnologías de Realidad Virtual.
+
+
+
+### Fase Inicial: Identificación de componentes
+
+1. El estudiante deberá revisar los planos de las instalaciones para familiarizarse con el escenario de la práctica. La @fig-house-plans muestra el plano de la vivienda donde se realizará la auditoría energética. Se recomienda prestar especial atención a la distribución de los espacios y la ubicación de los componentes eléctricos para facilitar las fases posteriores del laboratorio.
+
+::: {#fig-house-plans layout-ncol=2}
+
+![Primer piso de la residencia](/figures/paper_method/_house_plan_floor_1.png){#fig-house-plans-1}
+
+![Segundo piso de la residencia](/figures/paper_method/_house_plan_floor_2.png){#fig-house-plans-2}
+
+Planos de la residencia.
+
+:::
+
+1. Identifique cada uno de los componentes eléctricos presentes en el escenario, como electrodomésticos, dispositivos electrónicos, iluminación, etc. Anote su ubicación y función dentro del sistema eléctrico de la vivienda. Revise las fichas técnicas de cada componente para obtener información relevante como potencia y horas de uso. La 
+
+![Ejemplo de componente](/figures/paper_method/component_example.png){#fig-component-example}
+
+
+
+
+### Fase 1: Dimensionamiento Analítico
+
+1. Con base en la información recopilada en la fase anterior, realice un análisis de las cargas eléctricas presentes en la vivienda. Registre en la Tabla @tbl-devices-dc el consumo energético estimado para cada componente DC identificado.
+
+{{< include tables/_table_dc_devices.md >}}
+
+| Total Wh de DC por día: | __________ Wh/día |
+|:------------------------|:-----------------:|
+
+2. Registre en la Tabla @tbl-devices-ac el consumo energético estimado para cada componente AC identificado.
+
+{{< include tables/_table_ac_devices.md >}}
+
+| Total Wh de AC por día: | __________ Wh/día |
+|:------------------------|:-----------------:|
+
+| Energía DC equivalente: | __________ Wh/día |
+|:------------------------|:-----------------:|
+
+
+3. Sume la totalidad de cargas DC y AC para obtener el consumo energético total de la vivienda.
+
+| Energía Total (DC + AC): | __________ Wh/día |
+|:-------------------------|:-----------------:|
+
+
+
+
+### Fase 2: Determinar la tensión nominal y sus perdidas
+
+4. Determine la tensión nominal del sistema. Marque con una X.
+
+| Tensión Nominal del Sistema: |  V  |
+|:-----------------------------|:---:|
+| 12V                          | ___ |
+| 24V                          | ___ |
+| 48V                          | ___ |
+
+5. Determine el total de Amperios-hora de DC por día.
+
+| Requerimiento total diario (Ah/día )= | __________ Ah/día |
+|:--------------------------------------|:-----------------:|
+
+6. Corrija el valor de corriente de demanda por pérdidas en el sistema. Considere un factor de pérdidas del 10%.
+
+| Demanda final diaria (Ah/día )= | __________ Ah/día |
+|:--------------------------------|:-----------------:|
+
+
+
+### Fase 3: Determinar Las Horas de Sol Equivalente (ESH)
+
+Las horas de sol equivalentes son un parámetro importante al diseñar un sistema fotovoltaico sencillo. Una hora de sol equivalente, se define como el número de horas al día que una ubicación determinada recibe una irradiación solar, promediado a lo largo de todo un año.
+
+Para el caso del diseño fotovoltaico lo elige el jugador en una lista con 4 ubicaciones diferentes de Colombia con sus respectivos ESH reales.
+
+| Tabla    |    ESH    |
+|:---------|:---------:|
+| Popayán  | 3,5 h/día |
+| Bogotá   | 4,5 h/día |
+| Medellín | 5,0 h/día |
+| Cali     | 5,3 h/día |
+
+1. Escoja una ubicación y registre el valor de ESH correspondiente.
+
+| Ubicación seleccionada: | __________ |
+|:------------------------|:----------:|
+
+
+
+### Fase 4: Determinar la producción de corriente total requerida del sistema fotovoltaico 
+
+1. La producción de corriente total requerida es la corriente promedio que debe entregar el arreglo fotovoltaico por hora de sol equivalente para cubrir la demanda diaria.
+
+| Corriente total requerida (A)= | __________ |
+|:-------------------------------|:----------:|
+
+
+
+### Fase 5: Determinar el número de módulos fotovoltaicos 
+
+Para determinar este cálculo se debe elegir la especificación de un módulo fotovoltaico. Para este caso se determina el módulo descrito en la @fig-panel-description.
+
+![Descripción de panel fotovoltaico](/figures/paper_method/){#fig-panel-description}
+
+1. Determine el numero de modulos en paralelo ($N_p$)
+
+| $N_p=$ | __________ |
+|:-------|:----------:|
+
+2. Determine el numero de modulos en serie ($N_s$)
+
+| $N_s=$ | __________ |
+|:-------|:----------:|
+
+
+
+### Fase 6: Determinar la capacidad total de la batería
+
+1. Determine la capacidad de corriente requerida del sistma de baterias. Para esto primero hay que decidir los días de reserva (autonomía). En este caso se elige una autonomía de 5 días.
+
+|Capacidad requerida (Ah) = | __________ |
+|:--------------------------|:----------:|
+
+2. Determine la capacidad nominal de carga. Para ello, debe indicarse el porcentaje de descarga máxima permitido para las baterías (DoD). En este caso se elige un valor del 20%.
+
+| Capacidad nominal de carga (Ah) = | __________ |
+|:----------------------------------|:----------:|
+
+3. Determine el numero de baterias en serie ($N_{b,s}$). Para ello, es necesario conocer las caracteristicas de la batería seleccionada. Para este caso se elige una batería con una tensión nominal de 12V y una capacidad de 100Ah.
+
+| $N_{b,s}=$ | __________ |
+|:----------:|:----------:|
+
+4. Determine el numero de baterias en paralelo ($N_{b,p}$). 
+
+| $N_{b,p}=$ | __________ |
+|:----------:|:----------:|
+

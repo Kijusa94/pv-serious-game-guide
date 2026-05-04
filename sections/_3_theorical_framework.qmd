@@ -21,7 +21,9 @@ $$
 * **Corriente Continua (DC) vs. Corriente Alterna (AC):** Los sistemas fotovoltaicos operan de forma mixta. Los paneles solares y las baterías generan y almacenan energía en Corriente Continua (DC), donde el flujo de electrones es unidireccional. Por el contrario, la mayoría de los electrodomésticos e instrumentos finales operan en Corriente Alterna (AC). Para vincular ambos circuitos se requiere un equipo de transformación (Inversor).
 
 * **Conexiones de Circuitos (Leyes de Kirchhoff):** 
+
   * **Conexión en Serie:** Se conectan los polos opuestos (+ con -). En esta configuración, la tensión (Voltaje) se suma, mientras que la corriente (Amperaje) se mantiene constante.
+  
   * **Conexión en Paralelo:** Se conectan los polos iguales (+ con +, - con -). En esta configuración, la corriente (Amperaje) se suma, mientras que el voltaje se mantiene constante.
 
 
@@ -32,8 +34,11 @@ La energía solar fotovoltaica convierte la radiación solar directamente en ene
 Los sistemas autónomos se utilizan en áreas sin acceso a la red eléctrica (como zonas rurales e industriales remotas). Estos sistemas están compuestos principalmente por:
 
 * **Módulos Fotovoltaicos (Paneles):** Arreglo de células solares que captan la radiación y generan corriente DC.
+  
 * **Regulador de Carga:** Protege el banco de baterías contra sobrecargas o descargas profundas.
+  
 * **Banco de Baterías:** Almacena la energía en DC para garantizar la autonomía del sistema durante la noche o días nublados.
+  
 * **Inversor (DC/AC):** Transforma la energía de las baterías (DC) a corriente alterna (AC) para el consumo final. Este proceso tiene pérdidas térmicas, por lo que su eficiencia suele rondar el 90%.
 
 La @fig-off-grid-diagram muestra un diagrama de un sistema fotovoltaico autónomo.
@@ -72,8 +77,12 @@ $$
 
 * **Etapa 4: Requerimiento en Amperios-hora (Ah)** 
 
-Se traduce la energía total (Wh) a capacidad de corriente en el tiempo (Ah), la cual es la unidad estándar comercial para el dimensionamiento de baterías. Para ello, el diseñador debe establecer la tensión nominal de operación del sistema, seleccionando típicamente entre 12 V, 24 V o 48 V. Operar a mayor voltaje permite reducir la corriente transitada, minimizando así las caídas de tensión y el calibre del cableado requerido
-    
+Se traduce la energía total (Wh) a capacidad de corriente en el tiempo (Ah), la cual es la unidad estándar comercial para el dimensionamiento de baterías. Para ello, el diseñador debe establecer la tensión nominal de operación del sistema, seleccionando típicamente entre 12 V, 24 V o 48 V. Operar a mayor voltaje permite reducir la corriente transitada, minimizando así las caídas de tensión y el calibre del cableado requerido.
+
+* **Tensión nominal de 12V:** Ideal para sistemas pequeños, como iluminación LED básica o estaciones de carga de celulares (generalmente < 1000 W).
+* **Tensión nominal de 24V:** El estándar para viviendas pequeñas o medianas con refrigeración y electrodomésticos básicos (1000 W a 3000 W).
+* **Tensión nominal de 48V:** Obligatorio para sistemas grandes, motores o viviendas completas (> 3000 W).
+
 $$
 Requerimiento_{diario} (Ah/dia) = \frac{Energía_{Total} (Wh/dia)}{Tensión_{nominal} (V)}
 $$

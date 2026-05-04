@@ -4,7 +4,9 @@ El desarrollo de esta práctica se rige bajo una metodología de aprendizaje exp
 
 El tiempo estimado para la ejecución total del laboratorio es de 30 minutos. Se requiere el uso de calculadora, libreta de apuntes y seguir estrictamente las siguientes fases:
 
-
+:::{.callout-warning}
+LEA TODAs LAS INSTRUCCIONES ANTES DE INICIAR LA PRÁCTICA. EL INCUMPLIMIENTO DE LOS PASOS INDICADOS PUEDE RESULTAR EN LA INVALIDACIÓN DEL TRABAJO.
+:::
 
 ### Fase Pre-Laboratorio: Diagnóstico Inicial
 

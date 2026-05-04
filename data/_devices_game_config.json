@@ -1,0 +1,202 @@
+{
+  "devices": [
+    {
+      "brand": "Siemens PA210",
+      "name": "Aire acondicionado",
+      "score": 7200,
+      "powerWatts": 1800,
+      "dailyHours": 4,
+      "powerType": "AC",
+      "quantity": 1
+    },
+    {
+      "brand": "Oster",
+      "name": "Freidora de aire",
+      "score": 750,
+      "powerWatts": 1500,
+      "dailyHours": 0.5,
+      "powerType": "AC",
+      "quantity": 1
+    },
+    {
+      "brand": "Apple",
+      "name": "iPhone 12 Pro Max",
+      "score": 89,
+      "powerWatts": 14.9,
+      "dailyHours": 5,
+      "powerType": "DC",
+      "quantity": 1
+    },
+    {
+      "brand": "Apple",
+      "name": "iPad 11",
+      "score": 72,
+      "powerWatts": 20,
+      "dailyHours": 3,
+      "powerType": "DC",
+      "quantity": 3
+    },
+    {
+      "brand": "Harlow",
+      "name": "Lámpara de mesa",
+      "score": 200,
+      "powerWatts": 50,
+      "dailyHours": 4,
+      "powerType": "AC",
+      "quantity": 1
+    },
+    {
+      "brand": "Imusa",
+      "name": "Cafetera",
+      "score": 175,
+      "powerWatts": 700,
+      "dailyHours": 0.25,
+      "powerType": "AC",
+      "quantity": 1
+    },
+    {
+      "brand": "Rit Artic",
+      "name": "Lámpara de escritorio",
+      "score": 30,
+      "powerWatts": 10,
+      "dailyHours": 3,
+      "powerType": "AC",
+      "quantity": 2
+    },
+    {
+      "brand": "LG",
+      "name": "Secadora de ropa",
+      "score": 1000,
+      "powerWatts": 2000,
+      "dailyHours": 0.5,
+      "powerType": "AC",
+      "quantity": 1
+    },
+    {
+      "brand": "KitchenAid",
+      "name": "Estufa Eléctrica",
+      "score": 80,
+      "powerWatts": 80,
+      "dailyHours": 1,
+      "powerType": "AC",
+      "quantity": 1
+    },
+    {
+      "brand": "Samsung - 758 L",
+      "name": "Refrigerador",
+      "score": 3600,
+      "powerWatts": 150,
+      "dailyHours": 24,
+      "powerType": "AC",
+      "quantity": 1
+    },
+    {
+      "brand": "Huawei",
+      "name": "Matebook D16",
+      "score": 390,
+      "powerWatts": 65,
+      "dailyHours": 5,
+      "powerType": "DC",
+      "quantity": 1
+    },
+    {
+      "brand": "Huawei",
+      "name": "Tablet MatePad 12''",
+      "score": 72,
+      "powerWatts": 20,
+      "dailyHours": 3,
+      "powerType": "DC",
+      "quantity": 1
+    },
+    {
+      "brand": "Hyundai",
+      "name": "TV 32''",
+      "score": 400,
+      "powerWatts": 80,
+      "dailyHours": 5,
+      "powerType": "AC",
+      "quantity": 1
+    },
+    {
+      "brand": "KNT",
+      "name": "Lampara de Piso",
+      "score": 90,
+      "powerWatts": 15,
+      "dailyHours": 6,
+      "powerType": "AC",
+      "quantity": 4
+    },
+    {
+      "brand": "Apple",
+      "name": "iMac 21.5''",
+      "score": 360,
+      "powerWatts": 60,
+      "dailyHours": 6,
+      "powerType": "DC",
+      "quantity": 1
+    },
+    {
+      "brand": "Kalley",
+      "name": "Horno Microondas",
+      "score": 600,
+      "powerWatts": 1200,
+      "dailyHours": 0.5,
+      "powerType": "AC",
+      "quantity": 1
+    },
+    {
+      "brand": "IKEA",
+      "name": "Lampara de pared Led",
+      "score": 15,
+      "powerWatts": 15,
+      "dailyHours": 1,
+      "powerType": "AC",
+      "quantity": 2
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy S25",
+      "score": 90,
+      "powerWatts": 15,
+      "dailyHours": 5,
+      "powerType": "DC",
+      "quantity": 2
+    },
+    {
+      "brand": "Samsung",
+      "name": "Galaxy Tab S10",
+      "score": 72,
+      "powerWatts": 20,
+      "dailyHours": 3,
+      "powerType": "DC",
+      "quantity": 1
+    },
+    {
+      "brand": "Samsung",
+      "name": "TV 43''",
+      "score": 500,
+      "powerWatts": 100,
+      "dailyHours": 5,
+      "powerType": "AC",
+      "quantity": 2
+    },
+    {
+      "brand": "Pioneer",
+      "name": "Tostadora",
+      "score": 160,
+      "powerWatts": 800,
+      "dailyHours": 0.2,
+      "powerType": "AC",
+      "quantity": 1
+    },
+    {
+      "brand": "LG WD22",
+      "name": "Lavadora",
+      "score": 250,
+      "powerWatts": 500,
+      "dailyHours": 0.5,
+      "powerType": "AC",
+      "quantity": 1
+    }
+  ]
+}
