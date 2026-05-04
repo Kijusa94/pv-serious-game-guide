@@ -1,30 +1,12 @@
-## Conlusiones {#sec-conclusiones}
+## Entregables {#sec-entregables}
 
-### 5. Entregables y Criterios de Evaluación
+### Entregables y Criterios de Evaluación
 
 Esta práctica de laboratorio no solo evalúa el desempeño académico en la asignatura de Instrumentación Industrial, sino que forma parte de una prueba piloto para validar tecnologías inmersivas en la enseñanza de la ingeniería. Por lo tanto, la evaluación se dividirá en la entrega de soportes físicos y el análisis de las métricas obtenidas dentro del simulador.
 
-#### 5.1. Entregables del Laboratorio
+#### Entregables del Laboratorio
 Al finalizar la sesión, el estudiante (o su equipo de trabajo) deberá entregar al docente los siguientes soportes:
 
 1. **Encuestas de la prueba piloto:** Entrega formal de la encuesta diagnóstica inicial y la encuesta posterior de retroalimentación.
-2. **Hoja de Auditoría Energética:** Un listado claro con los equipos identificados en la simulación (Fase 1), detallando su potencia nominal (W) y tiempo de uso estimado (h).
-3. **Memoria de Cálculos Analíticos:** El desarrollo matemático estructurado de las 8 etapas de dimensionamiento (Fase 2), demostrando el cálculo de:
-   * Energía total diaria (incluyendo conversión AC/DC).
-   * Demanda final ajustada por pérdidas del sistema.
-   * Dimensionamiento del arreglo fotovoltaico (cálculo de módulos en serie y paralelo).
-   * Dimensionamiento del banco de baterías (incluyendo días de reserva y factor de profundidad de descarga).
 
-#### 5.2. Criterios de Evaluación Cuantitativa
-El desempeño técnico se medirá a través de las variables registradas directamente por el sistema de puntuación del *serious game*:
-
-* **Precisión del diseño:** Se evaluará el número de decisiones correctas al ingresar los parámetros en el Centro de Cálculos virtual.
-* **Eficiencia operativa:** Se medirá el tiempo total de resolución requerido para completar la validación técnica en el entorno virtual.
-* **Iteraciones:** Se contabilizará el número de intentos necesarios para lograr un diseño funcional. (Un alto número de intentos sugiere fallos en la Fase 2 de cálculo analítico).
-* **Puntaje global:** Puntaje final obtenido y registrado en el juego. 
-
-#### 5.3. Criterios de Evaluación Cualitativa
-Adicional a los cálculos, se evaluará la asimilación conceptual y la experiencia tecnológica del usuario:
-
-* **Asimilación de conceptos:** Medida a través de la encuesta post-experiencia, evaluando si el estudiante comprende la relación entre tensión y corriente, la conversión de energía diaria y la justificación técnica detrás del dimensionamiento de baterías.
-* **Experiencia de Usuario (UX):** Se recolectarán datos sobre la facilidad de interacción en la realidad virtual, la claridad de las interfaces, el nivel de inmersión y la posible presencia de fatiga o mareo durante la simulación. 
+2. **Resultados del dimensionamiento:** Documentación detallada del proceso de dimensionamiento del sistema fotovoltaico, incluyendo cálculos, tablas de consumo energético.

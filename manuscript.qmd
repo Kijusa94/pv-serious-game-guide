@@ -39,21 +39,21 @@ author:
 
 keywords:
   - Energía Solar
-  - Simulación
-  - Realidad Virtual
   - Educación
+  - Ingeniería industrial
+  - Sistemas fotovoltaicos
   - Formación Profesional
 
-abstract: |
-  La transición energética hacia fuentes renovables es un imperativo global para mitigar el cambio climático, pero presenta desafíos formativos significativos en el sector técnico y profesional. Este proyecto aborda la necesidad de metodologías de aprendizaje innovadoras para la capacitación en sistemas fotovoltaicos (FV), superando las limitaciones de los enfoques tradicionales mediante el uso de tecnologías inmersivas. Se presenta el diseño y desarrollo de un entorno de simulación virtual (serious game) que permite a los estudiantes realizar prácticas de montaje, dimensionamiento y mantenimiento de sistemas FV en un contexto seguro y controlable. Se implementó un primer prototipo centrado en la auditoría energética de un sistema fotovoltaico doméstico, integrando componentes virtuales realistas con una interfaz de usuario intuitiva y mecanismos de retroalimentación. La metodología seguida combinó el diseño instruccional, el desarrollo de software ágil y la validación por parte de expertos en energías renovables. Los resultados preliminares sugieren que el entorno virtual mejora la motivación, el compromiso y la comprensión de los conceptos técnicos por parte de los estudiantes.
+#abstract: |
+# La transición energética hacia fuentes renovables es un imperativo global para mitigar el cambio climático, pero presenta desafíos formativos significativos en el sector técnico y profesional. Este proyecto aborda la necesidad de metodologías de aprendizaje innovadoras para la capacitación en sistemas fotovoltaicos (FV), superando las limitaciones de los enfoques tradicionales mediante el uso de tecnologías inmersivas. Se presenta el diseño y desarrollo de un entorno de simulación virtual (serious game) que permite a los estudiantes realizar prácticas de montaje, dimensionamiento y mantenimiento de sistemas FV en un contexto seguro y controlable. Se implementó un primer prototipo centrado en la auditoría energética de un sistema fotovoltaico doméstico, integrando componentes virtuales realistas con una interfaz de usuario intuitiva y mecanismos de retroalimentación. La metodología seguida combinó el diseño instruccional, el desarrollo de software ágil y la validación por parte de expertos en energías renovables. Los resultados preliminares sugieren que el entorno virtual mejora la motivación, el compromiso y la comprensión de los conceptos técnicos por parte de los estudiantes.
 
-plain-language-summary: |
-  Este proyecto desarrolló un simulador en realidad virtual para capacitar estudiantes en sistemas de energía solar. El objetivo fue crear una herramienta que permita practicar la auditoria de cargas y los cálculos de dimensionamiento de sistemas fotovoltaicos de forma segura y controlada. Se diseñó un entorno virtual donde los estudiantes pueden realizar auditorías energéticas de sistemas domésticos, recolectar datos de consumo, calcular la configuración del sistema y validarla dentro de la simulación.
+#plain-language-summary: |
+# Este proyecto desarrolló un simulador en realidad virtual para capacitar estudiantes en sistemas de energía solar. El objetivo fue crear una herramienta que permita practicar la auditoria de cargas y los cálculos de dimensionamiento de sistemas fotovoltaicos de forma segura y controlada. Se diseñó un entorno virtual donde los estudiantes pueden realizar auditorías energéticas de sistemas domésticos, recolectar datos de consumo, calcular la configuración del sistema y validarla dentro de la simulación.
 
-key-points:
-  - El simulador permite a los estudiantes realizar auditorías energéticas de sistemas fotovoltaicos de forma segura y controlada.
-  - El simulador permite a los estudiantes calcular la configuración del sistema y validar el diseño dentro de la simulación.
-  - El simulador permite a los estudiantes aprender sobre sistemas fotovoltaicos de forma divertida y motivadora.
+#key-points:
+#  - El simulador permite a los estudiantes realizar auditorías energéticas de sistemas fotovoltaicos de forma segura y controlada.
+#  - El simulador permite a los estudiantes calcular la configuración del sistema y validar el diseño dentro de la simulación.
+#  - El simulador permite a los estudiantes aprender sobre sistemas fotovoltaicos de forma divertida y motivadora.
 
 date: last-modified
 
@@ -68,5 +68,5 @@ number-sections: true
 {{< include sections/_1_introduction.qmd >}}
 {{< include sections/_2_objectives.qmd >}}
 {{< include sections/_3_theorical_framework.qmd >}}
-{{< include sections/_4_methodology_paper.qmd >}}
+{{< include sections/_4_methodology_vr.qmd >}}
 {{< include sections/_5_questions.qmd >}}

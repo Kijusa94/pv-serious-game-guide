@@ -93,7 +93,7 @@ Contará con un tiempo límite de 2min para completar esta fase
 
 1. Retírese el visor de RV para realizar el trabajo de escritorio.
 
-2. Utilizando los datos recolectados en la Fase 1, aplique el algoritmo matemático de 8 etapas detallado en la **@sec-procedure-math-design-and-sizing**.
+2. Utilizando los datos recolectados en la Fase 1, aplique el algoritmo matemático de 6 etapas detallado en la **@sec-procedure-math-design-and-sizing**.
 
 3. Deberá calcular y registrar de manera estructurada:
    * El consumo energético de cada equipo y su conversión equivalente a corriente continua (DC).
@@ -110,11 +110,11 @@ Contará con un tiempo límite de 2min para completar esta fase
 
 ::: {#fig-tutorial-guides layout-ncol=3}
 
-![Panel de auditoría de cargas](figures/pv_design/figure_2_battery_and_system_losses.png){#fig-design-panel-1 width="100%"}
+![Panel de auditoría de cargas](figures/pv_design/figure_1_determine_system_power.png){#fig-design-panel-1 width="100%"}
 
-![Panel de selección de baterías](figures/pv_design/figure_3_list_esh.png){#fig-design-panel-2 width="100%"}
+![Panel de selección de baterías](figures/pv_design/figure_2_battery_and_system_losses.png){#fig-design-panel-2 width="100%"}
 
-![Panel de selección de ubicación](figures/pv_design/figure_4_esh.png){#fig-design-panel-3 width="100%"}
+![Panel de selección de Ubicación - ESH](figures/pv_design/figure_3_list_esh.png){#fig-design-panel-3 width="100%"}
 
 ![Panel de corriente total necesaria](figures/pv_design/figure_5_determine_total_current_required.png){#fig-design-panel-4 width="100%"}
 

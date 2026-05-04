@@ -210,3 +210,4 @@ __marimo__/
 **/*.quarto_ipynb
 _manuscript/
 docs/
+site_libs/
