@@ -55,7 +55,9 @@ Etapas del tutorial.
 
 6. Al finalizar el tutorial, se mostrará el menú principal de la aplicación.
 
-> El resumen de controles se puede encontrar en la @fig-controllers.
+#### Controles de la aplicación
+
+El resumen de controles se puede encontrar en la @fig-controllers.
 
 ![Controles de la aplicación](/figures/scenary/figure_1_controllers.png){#fig-controllers width="100%"}
 
@@ -69,7 +71,7 @@ Etapas del tutorial.
 2. Seleccione los objetos que requerirán suministro eléctrico en la locación remota y deposítelos en el vehículo de carga dispuesto en la simulación.
 
 :::{.callout-important}
-Contará con un tiempo límite de 2min para completar esta fase
+Contará con un tiempo límite de 5 min. para completar esta fase
 :::
 
 > Al interactuar con cada equipo, la interfaz de usuario desplegará sus especificaciones técnicas (@fig-dc-devices-info).
@@ -127,9 +129,15 @@ Contará con un tiempo límite de 2min para completar esta fase
 
 2. Ejecute la validación dentro del simulador. El sistema evaluará el balance energético de su propuesta; si los cálculos garantizan la estabilidad y autonomía del sistema para las cargas seleccionadas, la instalación será aprobada.
 
-> Al finalizar la validación observará su puntaje final, los cálculos realizados y los valores óptimos sugeridos por el simulador (retroalimentación - @fig-feedback-panel).
+> Al finalizar la validación observará su puntaje final, los cálculos realizados (blanco) y los valores óptimos sugeridos por el simulador (verde) o los errores de cálculo (rojo) (retroalimentación - @fig-feedback-panel).
 
 ![Panel de Resultados](figures/pv_design/figure_8_feedback_panel.png){#fig-feedback-panel width="100%"}
+
+:::{.callout-important}
+
+Presione el botón de "Ver el arreglo" para guardar los datos de su diseño y visualizar la configuración del sistema fotovoltaico propuesto en el entorno virtual.
+
+:::
 
 ### Fase Post-Laboratorio: Evaluación y Cierre
 

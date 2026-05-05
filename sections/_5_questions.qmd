@@ -2,7 +2,7 @@
 
 ### Entregables y Criterios de Evaluación
 
-Esta práctica de laboratorio no solo evalúa el desempeño académico en la asignatura de Instrumentación Industrial, sino que forma parte de una prueba piloto para validar tecnologías inmersivas en la enseñanza de la ingeniería. Por lo tanto, la evaluación se dividirá en la entrega de soportes físicos y el análisis de las métricas obtenidas dentro del simulador.
+La evaluación se dividirá en la entrega de soportes físicos y el análisis de las métricas obtenidas dentro del simulador.
 
 #### Entregables del Laboratorio
 Al finalizar la sesión, el estudiante (o su equipo de trabajo) deberá entregar al docente los siguientes soportes:
