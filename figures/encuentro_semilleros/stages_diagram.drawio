@@ -1,0 +1,46 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="RbutOLZZpajT1Z30bhxn">
+    <mxGraphModel dx="710" dy="432" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hITGJ_rO3vKh5mzw_NXB-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Auditoria de demanda energética" vertex="1">
+          <mxGeometry height="50" width="100" as="geometry" />
+        </mxCell>
+        <mxCell id="hITGJ_rO3vKh5mzw_NXB-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Requerimiento de Corriente por hora" vertex="1">
+          <mxGeometry height="50" width="100" x="100" as="geometry" />
+        </mxCell>
+        <mxCell id="hITGJ_rO3vKh5mzw_NXB-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Consideración de pérdidas" vertex="1">
+          <mxGeometry height="50" width="100" x="200" as="geometry" />
+        </mxCell>
+        <mxCell id="hITGJ_rO3vKh5mzw_NXB-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Corriente Total de Paneles" vertex="1">
+          <mxGeometry height="50" width="100" x="300" as="geometry" />
+        </mxCell>
+        <mxCell id="hITGJ_rO3vKh5mzw_NXB-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Dimensionamiento Arreglo Paneles" vertex="1">
+          <mxGeometry height="50" width="100" x="400" as="geometry" />
+        </mxCell>
+        <mxCell id="hITGJ_rO3vKh5mzw_NXB-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Dimensionamiento Banco Baterias" vertex="1">
+          <mxGeometry height="50" width="100" x="500" as="geometry" />
+        </mxCell>
+        <mxCell id="hITGJ_rO3vKh5mzw_NXB-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Identificar componentes&lt;div&gt;&lt;div&gt;Calcular consumo energía&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="100" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hITGJ_rO3vKh5mzw_NXB-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Traducir la energía total diaria a capacidad de corriente" vertex="1">
+          <mxGeometry height="70" width="100" x="100" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hITGJ_rO3vKh5mzw_NXB-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Ajustar la demanda para tener en cuenta las ineficiencias del sistema" vertex="1">
+          <mxGeometry height="70" width="100" x="200" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hITGJ_rO3vKh5mzw_NXB-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Determinar la inyección de corriente continua necesaria de los paneles" vertex="1">
+          <mxGeometry height="70" width="100" x="300" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hITGJ_rO3vKh5mzw_NXB-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Establecer la configuración Serie-Paralelo del arreglo de paneles" vertex="1">
+          <mxGeometry height="70" width="100" x="400" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hITGJ_rO3vKh5mzw_NXB-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Calcular la capacidad requerida y ajustar DoD" vertex="1">
+          <mxGeometry height="70" width="100" x="500" y="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
