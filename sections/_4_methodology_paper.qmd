@@ -32,13 +32,32 @@ Planos de la residencia.
 
 :::
 
-2. Identifique cada uno de los componentes eléctricos presentes en el escenario, como electrodomésticos, dispositivos electrónicos, iluminación, etc. Anote su ubicación y función dentro del sistema eléctrico de la vivienda. Revise las fichas técnicas de cada componente para obtener información relevante como potencia y horas de uso. La 
+2. Identifique cada uno de los componentes eléctricos presentes en el escenario, como electrodomésticos, dispositivos electrónicos, iluminación, etc. Revise las fichas técnicas de cada componente para obtener información relevante como potencia y horas de uso. Anote la potencia, horas de uso y tipo de carga de cada componente en su libreta de apuntes. Dispone de un espacio de 5 minutos para esta actividad.
 
-![Ejemplo de componente](/figures/paper_method/component_example.png){#fig-component-example}
+![](/figures/paper_method/components/01.jpeg){#fig-components-1}
+![](/figures/paper_method/components/02.jpeg){#fig-components-2}
+![](/figures/paper_method/components/03.jpeg){#fig-components-3}
+![](/figures/paper_method/components/04.jpeg){#fig-components-4}
+![](/figures/paper_method/components/05.jpeg){#fig-components-5}
+![](/figures/paper_method/components/06.jpeg){#fig-components-6}
+![](/figures/paper_method/components/07.jpeg){#fig-components-7}
+![](/figures/paper_method/components/08.jpeg){#fig-components-8}
+![](/figures/paper_method/components/09.jpeg){#fig-components-9}
+![](/figures/paper_method/components/10.jpeg){#fig-components-10}
+![](/figures/paper_method/components/11.jpeg){#fig-components-11}
+![](/figures/paper_method/components/12.jpeg){#fig-components-12}
+![](/figures/paper_method/components/13.jpeg){#fig-components-13}
+![](/figures/paper_method/components/14.jpeg){#fig-components-14}
+![](/figures/paper_method/components/15.jpeg){#fig-components-15}
+![](/figures/paper_method/components/16.jpeg){#fig-components-16}
+![](/figures/paper_method/components/17.jpeg){#fig-components-17}
+![](/figures/paper_method/components/18.jpeg){#fig-components-18}
+![](/figures/paper_method/components/19.jpeg){#fig-components-19}
+![](/figures/paper_method/components/20.jpeg){#fig-components-20}
+![](/figures/paper_method/components/21.jpeg){#fig-components-21}
+![](/figures/paper_method/components/22.jpeg){#fig-components-22}
 
-
-
-
+    
 ### Fase 1: Dimensionamiento Analítico
 
 1. Con base en la información recopilada en la fase anterior, realice un análisis de las cargas eléctricas presentes en la vivienda. Registre en la @tbl-devices-dc el consumo energético estimado para cada componente DC identificado.
