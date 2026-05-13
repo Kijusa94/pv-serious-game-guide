@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Luis Alejandro Martinez">
+<meta name="author" content="Juan José Piamba">
+<meta name="author" content="Diego Enrique Guzman">
+<meta name="author" content="Juan David Guzman">
+<meta name="dcterms.date" content="2026-05-13">
+<meta name="keywords" content="Energía Solar, Educación, Ingeniería industrial, Sistemas fotovoltaicos, Formación Profesional">
+
+<title>Guía de Laboratorio</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-4d7f0bce1131f3e5f9547cd857cfbfc8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta name="citation_title" content="Guía de Laboratorio">
+<meta name="citation_keywords" content="Energía Solar,Educación,Ingeniería industrial,Sistemas fotovoltaicos,Formación Profesional">
+<meta name="citation_author" content="Luis Alejandro Martinez">
+<meta name="citation_author" content="Juan José Piamba">
+<meta name="citation_author" content="Diego Enrique Guzman">
+<meta name="citation_author" content="Juan David Guzman">
+<meta name="citation_publication_date" content="2026-05-13">
+<meta name="citation_cover_date" content="2026-05-13">
+<meta name="citation_year" content="2026">
+<meta name="citation_online_date" content="2026-05-13">
+<meta name="citation_language" content="en">
+<meta name="citation_journal_title" content="Guía de Laboratorio">
+<meta name="citation_reference" content="citation_title=Literate programming;,citation_author=Donald E. Knuth;,citation_publication_date=1984-05;,citation_cover_date=1984-05;,citation_year=1984;,citation_fulltext_html_url=https://doi.org/10.1093/comjnl/27.2.97;,citation_issue=2;,citation_doi=10.1093/comjnl/27.2.97;,citation_issn=0010-4620;,citation_volume=27;,citation_journal_title=Comput. J.;,citation_publisher=Oxford University Press, Inc.;">
+</head>
+
+<body class="quarto-light">
+
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Guía de Laboratorio</h1>
+          </div>
+
+    
+    <div class="quarto-title-meta-container">
+      <div class="quarto-title-meta-column-start">
+            <div class="quarto-title-meta-author">
+          <div class="quarto-title-meta-heading">Authors</div>
+          <div class="quarto-title-meta-heading">Affiliations</div>
+          
+                <div class="quarto-title-meta-contents">
+            <p class="author">Luis Alejandro Martinez <a href="mailto:alejohur25@gmail.com" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0000-0000-0000" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        Fundación Universitaria de Popayán
+                      </p>
+                  </div>
+                      <div class="quarto-title-meta-contents">
+            <p class="author">Juan José Piamba <a href="mailto:juan.josep@docente.fup.edu.co" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0000-0000-0000" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        Fundación Universitaria de Popayán
+                      </p>
+                  </div>
+                      <div class="quarto-title-meta-contents">
+            <p class="author">Diego Enrique Guzman <a href="mailto:diego.guzman@unad.edu.co" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0000-0000-0000" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        Universidad Nacional Abierta y a Distancia
+                      </p>
+                  </div>
+                      <div class="quarto-title-meta-contents">
+            <p class="author">Juan David Guzman <a href="mailto:david.guzman@docente.fup.edu.co" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0000-0000-0000" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        Fundación Universitaria de Popayán
+                      </p>
+                  </div>
+                    </div>
+        
+        <div class="quarto-title-meta">
+
+                      
+                <div>
+            <div class="quarto-title-meta-heading">Published</div>
+            <div class="quarto-title-meta-contents">
+              <p class="date">May 13, 2026</p>
+            </div>
+          </div>
+          
+                
+              </div>
+      </div>
+      <div class="quarto-title-meta-column-end quarto-other-formats-target">
+      </div>
+    </div>
+
+
+    <div>
+      <div class="keywords">
+        <div class="block-title">Keywords</div>
+        <p>Energía Solar, Educación, Ingeniería industrial, Sistemas fotovoltaicos, Formación Profesional</p>
+      </div>
+    </div>
+
+    <div class="quarto-other-links-text-target">
+    </div>  </div>
+</header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-introduccion" id="toc-sec-introduccion" class="nav-link active" data-scroll-target="#sec-introduccion"><span class="header-section-number">1</span> Introducción</a>
+  <ul class="collapse">
+  <li><a href="#por-qué-es-importante-esta-práctica-para-su-formación" id="toc-por-qué-es-importante-esta-práctica-para-su-formación" class="nav-link" data-scroll-target="#por-qué-es-importante-esta-práctica-para-su-formación"><span class="header-section-number">1.1</span> ¿Por qué es importante esta práctica para su formación?</a></li>
+  </ul></li>
+  <li><a href="#sec-objetivos" id="toc-sec-objetivos" class="nav-link" data-scroll-target="#sec-objetivos"><span class="header-section-number">2</span> Objetivos</a>
+  <ul class="collapse">
+  <li><a href="#objetivo-general" id="toc-objetivo-general" class="nav-link" data-scroll-target="#objetivo-general"><span class="header-section-number">2.1</span> Objetivo General</a></li>
+  <li><a href="#objetivos-específicos" id="toc-objetivos-específicos" class="nav-link" data-scroll-target="#objetivos-específicos"><span class="header-section-number">2.2</span> Objetivos Específicos</a></li>
+  </ul></li>
+  <li><a href="#sec-marco-conceptial" id="toc-sec-marco-conceptial" class="nav-link" data-scroll-target="#sec-marco-conceptial"><span class="header-section-number">3</span> Marco conceptual</a>
+  <ul class="collapse">
+  <li><a href="#fundamentos-de-electricidad-y-circuitos" id="toc-fundamentos-de-electricidad-y-circuitos" class="nav-link" data-scroll-target="#fundamentos-de-electricidad-y-circuitos"><span class="header-section-number">3.1</span> Fundamentos de Electricidad y Circuitos</a></li>
+  <li><a href="#sistemas-fotovoltaicos-autónomos" id="toc-sistemas-fotovoltaicos-autónomos" class="nav-link" data-scroll-target="#sistemas-fotovoltaicos-autónomos"><span class="header-section-number">3.2</span> Sistemas Fotovoltaicos Autónomos</a></li>
+  <li><a href="#sec-procedure-math-design-and-sizing" id="toc-sec-procedure-math-design-and-sizing" class="nav-link" data-scroll-target="#sec-procedure-math-design-and-sizing"><span class="header-section-number">3.3</span> Procedimiento Matemático de Diseño y Dimensionamiento</a></li>
+  </ul></li>
+  <li><a href="#sec-procedimiento" id="toc-sec-procedimiento" class="nav-link" data-scroll-target="#sec-procedimiento"><span class="header-section-number">4</span> Procedimiento</a>
+  <ul class="collapse">
+  <li><a href="#fase-pre-laboratorio-diagnóstico-inicial" id="toc-fase-pre-laboratorio-diagnóstico-inicial" class="nav-link" data-scroll-target="#fase-pre-laboratorio-diagnóstico-inicial"><span class="header-section-number">4.1</span> Fase Pre-Laboratorio: Diagnóstico Inicial</a></li>
+  <li><a href="#fase-inicial-identificación-de-componentes" id="toc-fase-inicial-identificación-de-componentes" class="nav-link" data-scroll-target="#fase-inicial-identificación-de-componentes"><span class="header-section-number">4.2</span> Fase Inicial: Identificación de componentes</a></li>
+  <li><a href="#fase-1-dimensionamiento-analítico" id="toc-fase-1-dimensionamiento-analítico" class="nav-link" data-scroll-target="#fase-1-dimensionamiento-analítico"><span class="header-section-number">4.3</span> Fase 1: Dimensionamiento Analítico</a></li>
+  <li><a href="#fase-2-determinar-la-tensión-nominal-y-sus-pérdidas" id="toc-fase-2-determinar-la-tensión-nominal-y-sus-pérdidas" class="nav-link" data-scroll-target="#fase-2-determinar-la-tensión-nominal-y-sus-pérdidas"><span class="header-section-number">4.4</span> Fase 2: Determinar la tensión nominal y sus pérdidas</a></li>
+  <li><a href="#fase-3-determinar-las-horas-de-sol-equivalente-esh" id="toc-fase-3-determinar-las-horas-de-sol-equivalente-esh" class="nav-link" data-scroll-target="#fase-3-determinar-las-horas-de-sol-equivalente-esh"><span class="header-section-number">4.5</span> Fase 3: Determinar Las Horas de Sol Equivalente (ESH)</a></li>
+  <li><a href="#fase-4-determinar-la-producción-de-corriente-total-requerida-del-sistema-fotovoltaico" id="toc-fase-4-determinar-la-producción-de-corriente-total-requerida-del-sistema-fotovoltaico" class="nav-link" data-scroll-target="#fase-4-determinar-la-producción-de-corriente-total-requerida-del-sistema-fotovoltaico"><span class="header-section-number">4.6</span> Fase 4: Determinar la producción de corriente total requerida del sistema fotovoltaico</a></li>
+  <li><a href="#fase-5-determinar-el-número-de-módulos-fotovoltaicos" id="toc-fase-5-determinar-el-número-de-módulos-fotovoltaicos" class="nav-link" data-scroll-target="#fase-5-determinar-el-número-de-módulos-fotovoltaicos"><span class="header-section-number">4.7</span> Fase 5: Determinar el número de módulos fotovoltaicos</a></li>
+  <li><a href="#fase-6-determinar-la-capacidad-total-de-la-batería" id="toc-fase-6-determinar-la-capacidad-total-de-la-batería" class="nav-link" data-scroll-target="#fase-6-determinar-la-capacidad-total-de-la-batería"><span class="header-section-number">4.8</span> Fase 6: Determinar la capacidad total de la batería</a></li>
+  </ul></li>
+  <li><a href="#sec-entregables" id="toc-sec-entregables" class="nav-link" data-scroll-target="#sec-entregables"><span class="header-section-number">5</span> Entregables</a>
+  <ul class="collapse">
+  <li><a href="#entregables-y-criterios-de-evaluación" id="toc-entregables-y-criterios-de-evaluación" class="nav-link" data-scroll-target="#entregables-y-criterios-de-evaluación"><span class="header-section-number">5.1</span> Entregables y Criterios de Evaluación</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+  
+
+
+<section id="sec-introduccion" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="sec-introduccion"><span class="header-section-number">1</span> Introducción</h2>
+<p>Como futuros ingenieros industriales en Colombia, su rol trasciende la supervisión de líneas de producción; se centra en la <em>gestión estratégica de recursos</em> para garantizar la sostenibilidad y competitividad de las organizaciones. En el panorama nacional, la energía ha dejado de considerarse un gasto administrativo fijo para convertirse en un <em>insumo crítico y controlable</em> dentro de la estructura de costos operativos.</p>
+<p>Colombia atraviesa un proceso de transición energética impulsado por un marco normativo robusto (como la Ley 1715 de 2014), que incentiva la autogeneración a partir de fuentes no convencionales. En este escenario, poseer las competencias técnicas para dimensionar soluciones solares es una ventaja competitiva clave. Particularmente en regiones como el departamento del Cauca, donde la irradiación promedio de <em>4.25 kWh/m^{2}</em> ofrece un potencial de optimización energética superior al promedio global, el ingeniero industrial debe actuar como el arquitecto de sistemas que integran eficiencia, viabilidad financiera y responsabilidad ambiental.</p>
+<section id="por-qué-es-importante-esta-práctica-para-su-formación" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="por-qué-es-importante-esta-práctica-para-su-formación"><span class="header-section-number">1.1</span> ¿Por qué es importante esta práctica para su formación?</h3>
+<p>Esta práctica no busca formar técnicos instaladores, sino desarrollar el <em>criterio analítico</em> necesario para liderar proyectos de infraestructura energética. El ejercicio de auditoría y dimensionamiento es la base metodológica para la toma de decisiones basada en datos. La relevancia para su perfil profesional en el entorno colombiano se resume en tres pilares:</p>
+<ul>
+<li><p><em>Optimización de la Estructura de Costos:</em> En contextos industriales y empresariales (Sistemas On-grid), el rigor al auditar cargas permite identificar ineficiencias operativas y diseñar sistemas de autoconsumo que reducen drásticamente la factura eléctrica, impactando directamente en el margen de utilidad de la empresa.</p></li>
+<li><p><em>Desarrollo de Cadenas de Valor en Zonas No Interconectadas (ZNI):</em> En contextos rurales y agroindustriales (Sistemas Off-grid), la lógica de cálculo aplicada es la que permite tecnificar el agro colombiano. Como ingenieros, deben ser capaces de dimensionar sistemas de riego, refrigeración y procesamiento en zonas donde la red eléctrica tradicional es inexistente o poco confiable, garantizando la continuidad de la cadena de suministro.</p></li>
+<li><p><em>Gestión Integral del Ciclo de Vida:</em> Un ingeniero industrial debe ver el sistema de forma integral, desde la captación del recurso hasta el consumo final. Entender la interacción armónica entre paneles, baterías e inversores es fundamental para asegurar que la inversión de la organización sea técnicamente confiable y económicamente rentable a largo plazo.</p></li>
+</ul>
+<p>A través de esta guía, aprenderán un procedimiento secuencial de dimensionamiento de sistemas fotovoltaicos. Es un punto de partida técnico que les permitirá entender cómo cada componente (paneles, baterías e inversores) debe interactuar armónicamente para que el sistema sea confiable. Al finalizar, habrán desarrollado el criterio analítico necesario para tomar decisiones técnicas basadas en datos y principios físicos fundamentales.</p>
+</section>
+</section>
+<section id="sec-objetivos" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="sec-objetivos"><span class="header-section-number">2</span> Objetivos</h2>
+<section id="objetivo-general" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="objetivo-general"><span class="header-section-number">2.1</span> Objetivo General</h3>
+<ul>
+<li>Aplicar conceptos de electricidad y dimensionamiento de sistemas para configurar un sistema fotovoltaico autónomo (off-grid).</li>
+</ul>
+</section>
+<section id="objetivos-específicos" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="objetivos-específicos"><span class="header-section-number">2.2</span> Objetivos Específicos</h3>
+<ul>
+<li><p>Identificar las cargas eléctricas disponibles y registrar su consumo diario para su posterior cálculo energético.</p></li>
+<li><p>Calcular la energía y corriente equivalente en corriente continua (DC) de los equipos seleccionados, considerando la conversión desde corriente alterna (AC).</p></li>
+<li><p>Determinar la demanda total diaria ajustada por pérdidas del sistema y verificar la eficiencia del diseño fotovoltaico.</p></li>
+<li><p>Seleccionar la configuración adecuada de módulos solares en serie y paralelo para satisfacer los requisitos de tensión y corriente.</p></li>
+<li><p>Calcular la capacidad del banco de baterías necesaria para garantizar la autonomía requerida, aplicando los factores de corrección técnicos y los límites seguros de descarga.</p></li>
+</ul>
+</section>
+</section>
+<section id="sec-marco-conceptial" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="sec-marco-conceptial"><span class="header-section-number">3</span> Marco conceptual</h2>
+<p>Para comprender y dimensionar adecuadamente un sistema de generación fotovoltaica autónomo (off-grid), es indispensable dominar tanto los principios eléctricos que rigen el comportamiento de la energía, como la función específica de cada componente dentro del sistema.</p>
+<section id="fundamentos-de-electricidad-y-circuitos" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="fundamentos-de-electricidad-y-circuitos"><span class="header-section-number">3.1</span> Fundamentos de Electricidad y Circuitos</h3>
+<p>Antes de diseñar el sistema, repasaremos los conceptos fundamentales abordados en la asignatura de Instrumentación Industrial:</p>
+<ul>
+<li><p><strong>Potencia Eléctrica (W):</strong> Es la cantidad de energía consumida o generada por un elemento en un instante de tiempo. Se mide en Vatios (Watts). Matemáticamente, es el producto del voltaje y la corriente <span class="math display">\[
+P = V \cdot I
+\]</span></p></li>
+<li><p><strong>Energía Eléctrica (Wh):</strong> Representa el consumo o generación de potencia a lo largo del tiempo. Es el factor principal para nuestra auditoría energética. Su ecuación básica es:</p></li>
+</ul>
+<p><span class="math display">\[
+Energía = Potencia \times Tiempo
+\]</span></p>
+<ul>
+<li><p><strong>Corriente Continua (DC) vs.&nbsp;Corriente Alterna (AC):</strong> Los sistemas fotovoltaicos operan de forma mixta. Los paneles solares y las baterías generan y almacenan energía en Corriente Continua (DC), donde el flujo de electrones es unidireccional. Por el contrario, la mayoría de los electrodomésticos e instrumentos finales operan en Corriente Alterna (AC). Para vincular ambos circuitos se requiere un equipo de transformación (Inversor).</p></li>
+<li><p><strong>Conexiones de Circuitos (Leyes de Kirchhoff):</strong></p>
+<ul>
+<li><p><strong>Conexión en Serie:</strong> Se conectan los polos opuestos (+ con -). En esta configuración, la tensión (Voltaje) se suma, mientras que la corriente (Amperaje) se mantiene constante.</p></li>
+<li><p><strong>Conexión en Paralelo:</strong> Se conectan los polos iguales (+ con +, - con -). En esta configuración, la corriente (Amperaje) se suma, mientras que el voltaje se mantiene constante.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="sistemas-fotovoltaicos-autónomos" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="sistemas-fotovoltaicos-autónomos"><span class="header-section-number">3.2</span> Sistemas Fotovoltaicos Autónomos</h3>
+<p>La energía solar fotovoltaica convierte la radiación solar directamente en energía eléctrica mediante el efecto fotovoltaico, un fenómeno físico en el que la luz solar excita los electrones en materiales semiconductores.</p>
+<p>Los sistemas autónomos se utilizan en áreas sin acceso a la red eléctrica (como zonas rurales e industriales remotas). Estos sistemas están compuestos principalmente por:</p>
+<ul>
+<li><p><strong>Módulos Fotovoltaicos (Paneles):</strong> Arreglo de células solares que captan la radiación y generan corriente DC.</p></li>
+<li><p><strong>Regulador de Carga:</strong> Protege el banco de baterías contra sobrecargas o descargas profundas.</p></li>
+<li><p><strong>Banco de Baterías:</strong> Almacena la energía en DC para garantizar la autonomía del sistema durante la noche o días nublados.</p></li>
+<li><p><strong>Inversor (DC/AC):</strong> Transforma la energía de las baterías (DC) a corriente alterna (AC) para el consumo final. Este proceso tiene pérdidas térmicas, por lo que su eficiencia suele rondar el 90%.</p></li>
+</ul>
+<p>La <a href="#fig-off-grid-diagram" class="quarto-xref">Figure&nbsp;1</a> muestra un diagrama de un sistema fotovoltaico autónomo.</p>
+<div id="fig-off-grid-diagram" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-off-grid-diagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href=".\figures/theory/off_grid_diagram.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1: Diagrama de un sistema fotovoltaico autónomo"><img src=".\figures/theory/off_grid_diagram.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-off-grid-diagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Diagrama de un sistema fotovoltaico autónomo
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="sec-procedure-math-design-and-sizing" class="level3" data-number="3.3">
+<h3 data-number="3.3" class="anchored" data-anchor-id="sec-procedure-math-design-and-sizing"><span class="header-section-number">3.3</span> Procedimiento Matemático de Diseño y Dimensionamiento</h3>
+<p>El dimensionamiento de un sistema fotovoltaico autónomo no es una colección de fórmulas aisladas, sino un proceso secuencial. Como en cualquier diseño industrial, partimos de conocer la necesidad final (la demanda del usuario), calculamos las ineficiencias del proceso de transporte y transformación, y con ese total determinamos cuánta materia prima (energía solar y baterías) necesitamos instalar.</p>
+<ul>
+<li><strong>Etapa 1: Auditoría de la Demanda Energética</strong></li>
+</ul>
+<p>En la primera etapa, el objetivo es convertir la potencia instantánea de cada equipo identificado en un volumen de energía consumida a lo largo del tiempo. Conocer únicamente la potencia nominal en vatios (W) es insuficiente; es indispensable multiplicarla por el tiempo de operación estimado en horas (h) para dimensionar la extracción real de energía</p>
+<p><span class="math display">\[
+Energía (Wh) = Potencia (W) \times Tiempo (h)
+\]</span></p>
+<p>Posteriormente, se debe realizar la conversión de las cargas de corriente alterna (AC). Dado que el banco de baterías entrega energía en corriente continua (DC), el consumo de los equipos electrodomésticos debe ajustarse para compensar las ineficiencias térmicas del inversor. Asumiendo una eficiencia de conversión del 90%, la energía solicitada a las baterías será matemáticamente mayor al consumo real del equipo AC.</p>
+<p><span class="math display">\[
+Energía_{DC\_equiv} = \frac{Energía_{AC}}{0.9}
+\]</span></p>
+<p>Para concluir la primera fase, se unifican todos los requerimientos energéticos calculados. Se consolida la demanda sumando las cargas nativas en DC y las cargas equivalentes convertidas de AC, obteniendo así el requerimiento energético total diario de la instalación.</p>
+<p><span class="math display">\[
+Energía_{Total} = Energía_{DC} + Energía_{DC\_equiv}
+\]</span></p>
+<ul>
+<li><strong>Etapa 2: Requerimiento en Amperios-hora (Ah)</strong></li>
+</ul>
+<p>Se traduce la energía total (Wh) a capacidad de corriente en el tiempo (Ah), la cual es la unidad estándar comercial para el dimensionamiento de baterías. Para ello, el diseñador debe establecer la tensión nominal de operación del sistema, seleccionando típicamente entre 12 V, 24 V o 48 V. Operar a mayor voltaje permite reducir la corriente transitada, minimizando así las caídas de tensión y el calibre del cableado requerido.</p>
+<ul>
+<li><strong>Tensión nominal de 12V:</strong> Ideal para sistemas pequeños, como iluminación LED básica o estaciones de carga de celulares (generalmente &lt; 1000 W).</li>
+<li><strong>Tensión nominal de 24V:</strong> El estándar para viviendas pequeñas o medianas con refrigeración y electrodomésticos básicos (1000 W a 3000 W).</li>
+<li><strong>Tensión nominal de 48V:</strong> Obligatorio para sistemas grandes, motores o viviendas completas (&gt; 3000 W).</li>
+</ul>
+<p><span class="math display">\[
+Requerimiento_{diario} (Ah/dia) = \frac{Energía_{Total} (Wh/dia)}{Tensión_{nominal} (V)}
+\]</span></p>
+<ul>
+<li><strong>Etapa 3: Demanda Final con Pérdidas del Sistema</strong></li>
+</ul>
+<p>Luego, se introduce un margen de seguridad esencial para compensar las ineficiencias físicas del sistema. Los conductores eléctricos presentan resistencia, las conexiones disipan calor y los reguladores de carga consumen energía en su operación. Para garantizar que la demanda final sea satisfecha plenamente, se asume una eficiencia general del sistema del 90%, lo que obliga a sobredimensionar el requerimiento diario calculado previamente</p>
+<p><span class="math display">\[
+Demanda_{final} (Ah/dia) = \frac{Requerimiento_{diario}}{0.9}
+\]</span></p>
+<ul>
+<li><strong>Etapa 4: Corriente Total Requerida</strong></li>
+</ul>
+<p>Se determina la inyección de corriente necesaria por parte del arreglo de paneles. Debido a que la radiación solar fluctúa a lo largo del día, se utiliza el parámetro de Horas de Sol Equivalente (ESH), el cual estandariza la radiación disponible asumiendo un rendimiento pleno.</p>
+<p><span class="math display">\[
+Corriente_{requerida} (A) = \frac{Demanda_{final} (Ah/dia)}{ESH (h/dia)}
+\]</span></p>
+<ul>
+<li><strong>Etapa 5: Dimensionamiento del Arreglo Fotovoltaico (Módulos)</strong></li>
+</ul>
+<p>La arquitectura física del generador solar basándose en la ficha técnica del módulo seleccionado, específicamente en su tensión de máxima potencia (<span class="math inline">\(V_{mp}\)</span>) y su corriente de máxima potencia (<span class="math inline">\(I_{mp}\)</span>). Para satisfacer la demanda de corriente calculada, los paneles se agrupan en paralelo. Simultáneamente, para alcanzar la tensión nominal del sistema, se conectan en serie. El tamaño final del arreglo es el producto de ambas configuraciones.</p>
+<ul>
+<li><strong>Módulos en paralelo (<span class="math inline">\(N_p\)</span>):</strong></li>
+</ul>
+<p><span class="math display">\[
+N_{paralelo} = \frac{Corriente_{requerida} (A)}{I_{mp}}
+\]</span></p>
+<ul>
+<li><strong>Módulos en serie (<span class="math inline">\(N_s\)</span>):</strong> <span class="math display">\[
+N_{serie} = \frac{Voltaje_{nominal\_sistema}}{V_{mp}}
+\]</span></li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>Nota técnica:</strong> A efectos de esta simulación académica, utilice esta relación teórica.</p>
+</blockquote>
+<p><span class="math display">\[
+Total = N_{paralelo} \times N_{serie}
+\]</span></p>
+<ul>
+<li><strong>Etapa 6: Dimensionamiento del Banco de Baterías</strong></li>
+</ul>
+<p>Finalmente, en la etapa ocho, se estructura el banco de baterías responsable de mantener la autonomía energética. Primero, se calcula la capacidad bruta requerida multiplicando la demanda final por los días de reserva estipulados para soportar periodos sin radiación solar. Sin embargo, para preservar la vida útil de los acumuladores, se aplica un factor de profundidad de descarga (DoD). Al limitar la descarga a un máximo del 80%, la capacidad nominal requerida se incrementa matemáticamente. Una vez obtenida esta capacidad, las unidades físicas se disponen en configuraciones serie y paralelo para cumplir con la tensión y capacidad calculadas</p>
+<ul>
+<li><strong>Capacidad Requerida:</strong></li>
+</ul>
+<p><span class="math display">\[
+Capacidad_{req} (Ah) = Demanda_{final} \times Días_{reserva}
+\]</span></p>
+<ul>
+<li><strong>Capacidad Nominal (Ajuste por Descarga):</strong> Asumiendo una profundidad de descarga segura (DoD) del 20%.</li>
+</ul>
+<p><span class="math display">\[
+Capacidad_{nominal} (Ah) = \frac{Capacidad_{req}}{0.8}
+\]</span></p>
+<ul>
+<li><strong>Baterías en Serie:</strong></li>
+</ul>
+<p><span class="math display">\[
+N_{serie} = \frac{Voltaje_{nominal\_sistema} (V)}{Voltaje_{batería} (V)}
+\]</span></p>
+<ul>
+<li><strong>Baterías en Paralelo:</strong></li>
+</ul>
+<p><span class="math display">\[
+N_{paralelo} = \frac{Capacidad_{nominal\_requerida}}{Capacidad_{batería}}
+\]</span></p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>LEA TODAs LAS INSTRUCCIONES ANTES DE INICIAR LA PRÁCTICA. EL INCUMPLIMIENTO DE LOS PASOS INDICADOS PUEDE RESULTAR EN LA INVALIDACIÓN DEL TRABAJO.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="sec-procedimiento" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="sec-procedimiento"><span class="header-section-number">4</span> Procedimiento</h2>
+<p>El desarrollo de esta práctica se rige bajo una metodología de aprendizaje experiencial utilizando planos de las instalaciones y la tabla de componentes. Para garantizar la asimilación técnica, la sesión se divide en dos partes: una fase de auditoría energética y una fase de dimensionamiento del sistema fotovoltaico.</p>
+<p>El tiempo estimado para la ejecución total del laboratorio es de 30 minutos. Se requiere el uso de calculadora, libreta de apuntes y seguir estrictamente las siguientes fases:</p>
+<section id="fase-pre-laboratorio-diagnóstico-inicial" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="fase-pre-laboratorio-diagnóstico-inicial"><span class="header-section-number">4.1</span> Fase Pre-Laboratorio: Diagnóstico Inicial</h3>
+<ol type="1">
+<li><p>Antes de iniciar el procedimiento, el estudiante deberá diligenciar la encuesta diagnóstica inicial provista por el docente.</p></li>
+<li><p>Este instrumento tiene como objetivo establecer la línea base de sus conocimientos teóricos en energía solar.</p></li>
+</ol>
+</section>
+<section id="fase-inicial-identificación-de-componentes" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="fase-inicial-identificación-de-componentes"><span class="header-section-number">4.2</span> Fase Inicial: Identificación de componentes</h3>
+<ol type="1">
+<li>El estudiante deberá revisar los planos de las instalaciones para familiarizarse con el escenario de la práctica. La <a href="#fig-house-plans" class="quarto-xref">Figure&nbsp;2</a> muestra el plano de la vivienda donde se realizará la auditoría energética. Se recomienda prestar especial atención a la distribución de los espacios y la ubicación de los componentes eléctricos para facilitar las fases posteriores del laboratorio.</li>
+</ol>
+<div id="fig-house-plans" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-house-plans-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-house-plans" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-house-plans-1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-house-plans-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href=".\figures/paper_method/_house_plan_floor_1.png" class="lightbox" data-gallery="fig-house-plans" title="Figure&nbsp;2&nbsp;(a): Primer piso de la residencia"><img src=".\figures/paper_method/_house_plan_floor_1.png" class="img-fluid figure-img" data-ref-parent="fig-house-plans"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-house-plans-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Primer piso de la residencia
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-house-plans" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-house-plans-2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-house-plans-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href=".\figures/paper_method/_house_plan_floor_2.png" class="lightbox" data-gallery="fig-house-plans" title="Figure&nbsp;2&nbsp;(b): Segundo piso de la residencia"><img src=".\figures/paper_method/_house_plan_floor_2.png" class="img-fluid figure-img" data-ref-parent="fig-house-plans"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-house-plans-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Segundo piso de la residencia
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-house-plans-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Planos de la residencia.
+</figcaption>
+</figure>
+</div>
+<ol start="2" type="1">
+<li>Identifique cada uno de los componentes eléctricos presentes en el escenario, como electrodomésticos, dispositivos electrónicos, iluminación, etc. Revise las fichas técnicas de cada componente para obtener información relevante como potencia y horas de uso. Anote la potencia, horas de uso y tipo de carga de cada componente en su libreta de apuntes. Dispone de un espacio de 5 minutos para esta actividad.</li>
+</ol>
+<p><img src=".\figures/paper_method/components/01.jpeg" id="fig-components-1" class="img-fluid"> <img src=".\figures/paper_method/components/02.jpeg" id="fig-components-2" class="img-fluid"> <img src=".\figures/paper_method/components/03.jpeg" id="fig-components-3" class="img-fluid"> <img src=".\figures/paper_method/components/04.jpeg" id="fig-components-4" class="img-fluid"> <img src=".\figures/paper_method/components/05.jpeg" id="fig-components-5" class="img-fluid"> <img src=".\figures/paper_method/components/06.jpeg" id="fig-components-6" class="img-fluid"> <img src=".\figures/paper_method/components/07.jpeg" id="fig-components-7" class="img-fluid"> <img src=".\figures/paper_method/components/08.jpeg" id="fig-components-8" class="img-fluid"> <img src=".\figures/paper_method/components/09.jpeg" id="fig-components-9" class="img-fluid"> <img src=".\figures/paper_method/components/10.jpeg" id="fig-components-10" class="img-fluid"> <img src=".\figures/paper_method/components/11.jpeg" id="fig-components-11" class="img-fluid"> <img src=".\figures/paper_method/components/12.jpeg" id="fig-components-12" class="img-fluid"> <img src=".\figures/paper_method/components/13.jpeg" id="fig-components-13" class="img-fluid"> <img src=".\figures/paper_method/components/14.jpeg" id="fig-components-14" class="img-fluid"> <img src=".\figures/paper_method/components/15.jpeg" id="fig-components-15" class="img-fluid"> <img src=".\figures/paper_method/components/16.jpeg" id="fig-components-16" class="img-fluid"> <img src=".\figures/paper_method/components/17.jpeg" id="fig-components-17" class="img-fluid"> <img src=".\figures/paper_method/components/18.jpeg" id="fig-components-18" class="img-fluid"> <img src=".\figures/paper_method/components/19.jpeg" id="fig-components-19" class="img-fluid"> <img src=".\figures/paper_method/components/20.jpeg" id="fig-components-20" class="img-fluid"> <img src=".\figures/paper_method/components/21.jpeg" id="fig-components-21" class="img-fluid"> <img src=".\figures/paper_method/components/22.jpeg" id="fig-components-22" class="img-fluid"></p>
+</section>
+<section id="fase-1-dimensionamiento-analítico" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="fase-1-dimensionamiento-analítico"><span class="header-section-number">4.3</span> Fase 1: Dimensionamiento Analítico</h3>
+<ol type="1">
+<li>Con base en la información recopilada en la fase anterior, realice un análisis de las cargas eléctricas presentes en la vivienda. Registre en la <a href="#tbl-devices-dc" class="quarto-xref">Table&nbsp;1</a> el consumo energético estimado para cada componente DC identificado.</li>
+</ol>
+<div id="tbl-devices-dc" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-devices-dc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Tabla de auditoria de cargas
+</figcaption>
+<div aria-describedby="tbl-devices-dc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 19%">
+<col style="width: 26%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Dispositivo DC</th>
+<th style="text-align: center;">Consumo (W)</th>
+<th style="text-align: center;">Horas de uso (h)</th>
+<th style="text-align: center;">Consumo diario (Wh)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Dispositivo 1</td>
+<td style="text-align: center;">W</td>
+<td style="text-align: center;">h</td>
+<td style="text-align: center;">Wh</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Dispositivo 2</td>
+<td style="text-align: center;">W</td>
+<td style="text-align: center;">h</td>
+<td style="text-align: center;">Wh</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Dispositivo 3</td>
+<td style="text-align: center;">W</td>
+<td style="text-align: center;">h</td>
+<td style="text-align: center;">Wh</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Total Wh de DC por día:</td>
+<td style="text-align: center;">__________ Wh/día</td>
+</tr>
+</tbody>
+</table>
+<ol start="2" type="1">
+<li>Registre en la Tabla <a href="#tbl-devices-ac" class="quarto-xref">Table&nbsp;2</a> el consumo energético estimado para cada componente AC identificado.</li>
+</ol>
+<div id="tbl-devices-ac" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-devices-ac-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Tabla de auditoria de cargas
+</figcaption>
+<div aria-describedby="tbl-devices-ac-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 19%">
+<col style="width: 26%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Dispositivo AC</th>
+<th style="text-align: center;">Consumo (W)</th>
+<th style="text-align: center;">Horas de uso (h)</th>
+<th style="text-align: center;">Consumo diario (Wh)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Dispositivo 1</td>
+<td style="text-align: center;">W</td>
+<td style="text-align: center;">h</td>
+<td style="text-align: center;">Wh</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Dispositivo 2</td>
+<td style="text-align: center;">W</td>
+<td style="text-align: center;">h</td>
+<td style="text-align: center;">Wh</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Dispositivo 3</td>
+<td style="text-align: center;">W</td>
+<td style="text-align: center;">h</td>
+<td style="text-align: center;">Wh</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Total Wh de AC por día:</td>
+<td style="text-align: center;">__________ Wh/día</td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Energía DC equivalente:</td>
+<td style="text-align: center;">__________ Wh/día</td>
+</tr>
+</tbody>
+</table>
+<ol start="3" type="1">
+<li>Sume la totalidad de cargas DC y AC para obtener el consumo energético total de la vivienda.</li>
+</ol>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Energía Total (DC + AC):</td>
+<td style="text-align: center;">__________ Wh/día</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="fase-2-determinar-la-tensión-nominal-y-sus-pérdidas" class="level3" data-number="4.4">
+<h3 data-number="4.4" class="anchored" data-anchor-id="fase-2-determinar-la-tensión-nominal-y-sus-pérdidas"><span class="header-section-number">4.4</span> Fase 2: Determinar la tensión nominal y sus pérdidas</h3>
+<ol type="1">
+<li>Determine la tensión nominal del sistema. Marque con una X.</li>
+</ol>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Tensión Nominal del Sistema:</th>
+<th style="text-align: center;">V</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">12V</td>
+<td style="text-align: center;">___</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">24V</td>
+<td style="text-align: center;">___</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">48V</td>
+<td style="text-align: center;">___</td>
+</tr>
+</tbody>
+</table>
+<ol start="2" type="1">
+<li>Determine el total de Amperios-hora de DC por día.</li>
+</ol>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Requerimiento total diario (Ah/día )=</td>
+<td style="text-align: center;">__________ Ah/día</td>
+</tr>
+</tbody>
+</table>
+<ol start="3" type="1">
+<li>Corrija el valor de corriente de demanda por pérdidas en el sistema. Considere un factor de pérdidas del 10%.</li>
+</ol>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Demanda final diaria (Ah/día )=</td>
+<td style="text-align: center;">__________ Ah/día</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="fase-3-determinar-las-horas-de-sol-equivalente-esh" class="level3" data-number="4.5">
+<h3 data-number="4.5" class="anchored" data-anchor-id="fase-3-determinar-las-horas-de-sol-equivalente-esh"><span class="header-section-number">4.5</span> Fase 3: Determinar Las Horas de Sol Equivalente (ESH)</h3>
+<p>Las horas de sol equivalentes son un parámetro importante al diseñar un sistema fotovoltaico sencillo. Una hora de sol equivalente, se define como el número de horas al día que una ubicación determinada recibe una irradiación solar, promediado a lo largo de todo un año.</p>
+<p>Para el caso del diseño fotovoltaico lo elige el jugador en una lista con 4 ubicaciones diferentes de Colombia con sus respectivos ESH reales.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Tabla</th>
+<th style="text-align: center;">ESH</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Popayán</td>
+<td style="text-align: center;">3,5 h/día</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Bogotá</td>
+<td style="text-align: center;">4,5 h/día</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Medellín</td>
+<td style="text-align: center;">5,0 h/día</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Cali</td>
+<td style="text-align: center;">5,3 h/día</td>
+</tr>
+</tbody>
+</table>
+<ol type="1">
+<li>Escoja una ubicación y registre el valor de ESH correspondiente.</li>
+</ol>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Ubicación seleccionada:</td>
+<td style="text-align: center;">__________</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="fase-4-determinar-la-producción-de-corriente-total-requerida-del-sistema-fotovoltaico" class="level3" data-number="4.6">
+<h3 data-number="4.6" class="anchored" data-anchor-id="fase-4-determinar-la-producción-de-corriente-total-requerida-del-sistema-fotovoltaico"><span class="header-section-number">4.6</span> Fase 4: Determinar la producción de corriente total requerida del sistema fotovoltaico</h3>
+<ol type="1">
+<li>La producción de corriente total requerida es la corriente promedio que debe entregar el arreglo fotovoltaico por hora de sol equivalente para cubrir la demanda diaria.</li>
+</ol>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Corriente total requerida (A)=</td>
+<td style="text-align: center;">__________</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="fase-5-determinar-el-número-de-módulos-fotovoltaicos" class="level3" data-number="4.7">
+<h3 data-number="4.7" class="anchored" data-anchor-id="fase-5-determinar-el-número-de-módulos-fotovoltaicos"><span class="header-section-number">4.7</span> Fase 5: Determinar el número de módulos fotovoltaicos</h3>
+<p>Para determinar este cálculo se debe elegir la especificación de un módulo fotovoltaico. Para este caso se determina el módulo descrito en la <a href="#fig-panel-description" class="quarto-xref">Figure&nbsp;3</a>.</p>
+<div id="fig-panel-description" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-panel-description-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href=".\figures/paper_method/panel_info.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figure&nbsp;3: Descripción de panel fotovoltaico"><img src=".\figures/paper_method/panel_info.jpeg" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-panel-description-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Descripción de panel fotovoltaico
+</figcaption>
+</figure>
+</div>
+<ol type="1">
+<li>Determine el número de módulos en paralelo (<span class="math inline">\(N_p\)</span>)</li>
+</ol>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(N_p=\)</span></td>
+<td style="text-align: center;">__________</td>
+</tr>
+</tbody>
+</table>
+<ol start="2" type="1">
+<li>Determine el número de módulos en serie (<span class="math inline">\(N_s\)</span>)</li>
+</ol>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(N_s=\)</span></td>
+<td style="text-align: center;">__________</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="fase-6-determinar-la-capacidad-total-de-la-batería" class="level3" data-number="4.8">
+<h3 data-number="4.8" class="anchored" data-anchor-id="fase-6-determinar-la-capacidad-total-de-la-batería"><span class="header-section-number">4.8</span> Fase 6: Determinar la capacidad total de la batería</h3>
+<p>Para determinar este cálculo se debe elegir la especificación de una batería. Para este caso se determina la batería descrita en la <a href="#fig-battery-description" class="quarto-xref">Figure&nbsp;4</a>.</p>
+<div id="fig-battery-description" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-battery-description-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href=".\figures/paper_method/battery_info.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figure&nbsp;4: Descripción de batería"><img src=".\figures/paper_method/battery_info.jpeg" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-battery-description-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Descripción de batería
+</figcaption>
+</figure>
+</div>
+<ol type="1">
+<li>Determine la capacidad de corriente requerida del sistema de baterias. Para esto primero hay que decidir los días de reserva (autonomía). En este caso se elige una autonomía de 5 días.</li>
+</ol>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Capacidad requerida (Ah) =</td>
+<td style="text-align: center;">__________</td>
+</tr>
+</tbody>
+</table>
+<ol start="2" type="1">
+<li>Determine la capacidad nominal de carga. Para ello, debe indicarse el porcentaje de descarga máxima permitido para las baterías (DoD). En este caso se elige un valor del 80%.</li>
+</ol>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Capacidad nominal de carga (Ah) =</td>
+<td style="text-align: center;">__________</td>
+</tr>
+</tbody>
+</table>
+<ol start="3" type="1">
+<li>Determine el número de baterias en serie (<span class="math inline">\(N_{b,s}\)</span>). Para ello, es necesario conocer las caracteristicas de la batería seleccionada. Para este caso se elige una batería con una tensión nominal de 12V y una capacidad de 100Ah.</li>
+</ol>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(N_{b,s}=\)</span></td>
+<td style="text-align: center;">__________</td>
+</tr>
+</tbody>
+</table>
+<ol start="4" type="1">
+<li>Determine el número de baterias en paralelo (<span class="math inline">\(N_{b,p}\)</span>).</li>
+</ol>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(N_{b,p}=\)</span></td>
+<td style="text-align: center;">__________</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="sec-entregables" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="sec-entregables"><span class="header-section-number">5</span> Entregables</h2>
+<section id="entregables-y-criterios-de-evaluación" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="entregables-y-criterios-de-evaluación"><span class="header-section-number">5.1</span> Entregables y Criterios de Evaluación</h3>
+<p>La evaluación se dividirá en la entrega de soportes físicos y el análisis de las métricas obtenidas dentro del simulador.</p>
+<section id="entregables-del-laboratorio" class="level4" data-number="5.1.1">
+<h4 data-number="5.1.1" class="anchored" data-anchor-id="entregables-del-laboratorio"><span class="header-section-number">5.1.1</span> Entregables del Laboratorio</h4>
+<p>Al finalizar la sesión, el estudiante (o su equipo de trabajo) deberá entregar al docente los siguientes soportes:</p>
+<ol type="1">
+<li><p><strong>Encuestas de la prueba piloto:</strong> Entrega formal de la encuesta diagnóstica inicial y la encuesta posterior de retroalimentación.</p></li>
+<li><p><strong>Resultados del dimensionamiento:</strong> Documentación detallada del proceso de dimensionamiento del sistema fotovoltaico, incluyendo cálculos, tablas de consumo energético.</p></li>
+</ol>
+</section>
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{alejandro_martinez2026,
+  author = {Alejandro Martinez, Luis and José Piamba, Juan and Enrique
+    Guzman, Diego and David Guzman, Juan},
+  title = {Guía de {Laboratorio}},
+  date = {2026-05-13},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-alejandro_martinez2026" class="csl-entry quarto-appendix-citeas" role="listitem">
+Alejandro Martinez, Luis, Juan José Piamba, Diego Enrique Guzman, and
+Juan David Guzman. 2026. <span>“Guía de Laboratorio.”</span> Guía de
+Laboratorio. May 13, 2026.
+</div></div></section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>
